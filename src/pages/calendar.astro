@@ -1,0 +1,16 @@
+---
+import Layout from "@/components/Layout.astro";
+import EventList from "@/components/EventList.astro";
+const icsUrl = "/earthsong.ics";
+---
+<Layout title="Sacred Cycles — Calendar">
+  <h1 class="text-2xl font-semibold mb-4">Sacred Cycles</h1>
+
+  <div class="mb-6 flex gap-3">
+    <a class="px-3 py-2 rounded bg-earth text-white" href={icsUrl}>Download .ics</a>
+    <a class="px-3 py-2 rounded border border-earth text-earth" href={"webcal://" + new URL(icsUrl, "https://earthsong.io").host + "/earthsong.ics"}>Subscribe (webcal)</a>
+    <span class="text-sm text-ink/70">Google Calendar → Settings → Add calendar → From URL → https://earthsong.io/earthsong.ics</span>
+  </div>
+
+  <EventList />
+</Layout>

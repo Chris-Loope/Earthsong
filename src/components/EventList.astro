@@ -1,0 +1,21 @@
+---
+import events from '../../data/cycle.json';
+const sorted = [...events].sort((a,b)=> new Date(a.start) - new Date(b.start));
+---
+<ul class="space-y-3">
+  {sorted.map(e => (
+    <li class="rounded border border-ink/10 bg-white p-4">
+      <div class="font-medium">{e.title}</div>
+      <div class="text-sm text-ink/70">
+        <time datetime={e.start}>
+          {new Date(e.start).toLocaleString(undefined, {
+            year: 'numeric', month: 'long', day: 'numeric',
+            hour: /T/.test(e.start) ? '2-digit' : undefined,
+            minute: /T/.test(e.start) ? '2-digit' : undefined
+          })}
+        </time>
+        {e.tags?.length ? <> · {e.tags.join(", ")}</> : null}
+      </div>
+    </li>
+  ))}
+</ul>

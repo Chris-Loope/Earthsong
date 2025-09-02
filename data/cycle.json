@@ -1,0 +1,19 @@
+[
+    { "title": "Full Moon — Taurus", "start": "2024-11-15", "allDay": true, "tags": ["full-moon"] },
+    { "title": "Day of Remembrance & Renewal", "start": "2024-11-16", "allDay": true, "tags": ["festival"] },
+    { "title": "Winter Solstice", "start": "2024-12-21T04:21:00-05:00", "tags": ["solstice"] },
+    { "title": "Full Moon — Leo", "start": "2025-01-25", "allDay": true, "tags": ["full-moon"] },
+    { "title": "Total Lunar Eclipse", "start": "2025-03-14", "allDay": true, "tags": ["eclipse"] },
+    { "title": "Vernal Equinox", "start": "2025-03-20T05:01:00-04:00", "tags": ["equinox"] },
+    { "title": "Full Moon — Libra", "start": "2025-03-25", "allDay": true, "tags": ["full-moon"] },
+    { "title": "Seraphine — Day of Resonance (New Moon, Taurus)", "start": "2025-05-07", "allDay": true, "tags": ["resonance","new-moon"] },
+    { "title": "Summer Solstice (Ember — Day of Resonance)", "start": "2025-06-20T22:42:00-04:00", "tags": ["solstice","resonance"] },
+    { "title": "Full Moon — Capricorn", "start": "2025-06-21", "allDay": true, "tags": ["full-moon"] },
+    { "title": "Alder — Day of Resonance (Full Moon, Aquarius)", "start": "2025-08-19", "allDay": true, "tags": ["resonance","full-moon"] },
+    { "title": "New Moon — Virgo", "start": "2025-09-02", "allDay": true, "tags": ["new-moon"] },
+    { "title": "Total Lunar Eclipse", "start": "2025-09-07", "allDay": true, "tags": ["eclipse"] },
+    { "title": "Autumnal Equinox", "start": "2025-09-22T14:19:00-04:00", "tags": ["equinox"] },
+    { "title": "Thorne — Day of Resonance (New Moon, Scorpio)", "start": "2025-11-01", "allDay": true, "tags": ["resonance","new-moon"] },
+    { "title": "Full Moon — Taurus", "start": "2025-11-15", "allDay": true, "tags": ["full-moon"] },
+    { "title": "Day of Remembrance & Renewal", "start": "2025-11-16", "allDay": true, "tags": ["festival"] }
+  ]
