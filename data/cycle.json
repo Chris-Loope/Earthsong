@@ -35,10 +35,24 @@
     ]
   },
   {
+    "title": "Total Lunar Eclipse",
+    "start": "2025-03-14T06:58:42.343Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
     "title": "Vernal Equinox",
     "start": "2025-03-20T09:01:26.759Z",
     "tags": [
       "season"
+    ]
+  },
+  {
+    "title": "Partial Solar Eclipse",
+    "start": "2025-03-29T10:47:25.889Z",
+    "tags": [
+      "eclipse"
     ]
   },
   {
@@ -133,6 +147,20 @@
     ]
   },
   {
+    "title": "Total Lunar Eclipse",
+    "start": "2025-09-07T18:11:41.501Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
+    "title": "Partial Solar Eclipse",
+    "start": "2025-09-21T19:41:48.934Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
     "title": "New Moon",
     "start": "2025-09-21T19:54:45.095Z",
     "tags": [
@@ -221,6 +249,20 @@
     "start": "2026-02-17T12:01:47.328Z",
     "tags": [
       "new-moon"
+    ]
+  },
+  {
+    "title": "Annular Solar Eclipse",
+    "start": "2026-02-17T12:11:53.939Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
+    "title": "Total Lunar Eclipse",
+    "start": "2026-03-03T11:33:40.289Z",
+    "tags": [
+      "eclipse"
     ]
   },
   {
@@ -322,6 +364,20 @@
     ]
   },
   {
+    "title": "Total Solar Eclipse",
+    "start": "2026-08-12T17:45:46.794Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
+    "title": "Partial Lunar Eclipse",
+    "start": "2026-08-28T04:12:49.076Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
     "title": "Full Moon",
     "start": "2026-08-28T04:19:06.085Z",
     "tags": [
@@ -420,6 +476,20 @@
     ]
   },
   {
+    "title": "Annular Solar Eclipse",
+    "start": "2027-02-06T15:59:32.957Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
+    "title": "Penumbral Lunar Eclipse",
+    "start": "2027-02-20T23:12:44.142Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
     "title": "Full Moon",
     "start": "2027-02-20T23:24:07.298Z",
     "tags": [
@@ -511,10 +581,31 @@
     ]
   },
   {
+    "title": "Penumbral Lunar Eclipse",
+    "start": "2027-07-18T16:02:54.880Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
     "title": "New Moon",
     "start": "2027-08-02T10:05:42.274Z",
     "tags": [
       "new-moon"
+    ]
+  },
+  {
+    "title": "Total Solar Eclipse",
+    "start": "2027-08-02T10:06:34.636Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
+    "title": "Penumbral Lunar Eclipse",
+    "start": "2027-08-17T07:13:44.931Z",
+    "tags": [
+      "eclipse"
     ]
   },
   {
@@ -606,6 +697,20 @@
     "start": "2028-01-12T04:03:35.250Z",
     "tags": [
       "full-moon"
+    ]
+  },
+  {
+    "title": "Partial Lunar Eclipse",
+    "start": "2028-01-12T04:13:00.859Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
+    "title": "Annular Solar Eclipse",
+    "start": "2028-01-26T15:07:42.381Z",
+    "tags": [
+      "eclipse"
     ]
   },
   {
@@ -707,6 +812,20 @@
     ]
   },
   {
+    "title": "Partial Lunar Eclipse",
+    "start": "2028-07-06T18:19:38.379Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
+    "title": "Total Solar Eclipse",
+    "start": "2028-07-22T02:55:24.627Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
     "title": "New Moon",
     "start": "2028-07-22T03:02:12.962Z",
     "tags": [
@@ -805,6 +924,20 @@
     ]
   },
   {
+    "title": "Total Lunar Eclipse",
+    "start": "2028-12-31T16:51:54.549Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
+    "title": "Partial Solar Eclipse",
+    "start": "2029-01-14T17:12:28.816Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
     "title": "New Moon",
     "start": "2029-01-14T17:25:04.419Z",
     "tags": [
@@ -889,6 +1022,13 @@
     ]
   },
   {
+    "title": "Partial Solar Eclipse",
+    "start": "2029-06-12T04:04:55.151Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
     "title": "Summer Solstice",
     "start": "2029-06-21T01:48:17.389Z",
     "tags": [
@@ -896,10 +1036,24 @@
     ]
   },
   {
+    "title": "Total Lunar Eclipse",
+    "start": "2029-06-26T03:22:06.538Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
     "title": "Full Moon",
     "start": "2029-06-26T03:22:52.166Z",
     "tags": [
       "full-moon"
+    ]
+  },
+  {
+    "title": "Partial Solar Eclipse",
+    "start": "2029-07-11T15:36:03.870Z",
+    "tags": [
+      "eclipse"
     ]
   },
   {
@@ -984,6 +1138,20 @@
     "start": "2029-12-05T14:52:35.435Z",
     "tags": [
       "new-moon"
+    ]
+  },
+  {
+    "title": "Partial Solar Eclipse",
+    "start": "2029-12-05T15:02:39.906Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
+    "title": "Total Lunar Eclipse",
+    "start": "2029-12-20T22:41:54.610Z",
+    "tags": [
+      "eclipse"
     ]
   },
   {
@@ -1085,6 +1253,20 @@
     ]
   },
   {
+    "title": "Annular Solar Eclipse",
+    "start": "2030-06-01T06:27:58.051Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
+    "title": "Partial Lunar Eclipse",
+    "start": "2030-06-15T18:33:14.732Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
     "title": "Full Moon",
     "start": "2030-06-15T18:41:27.269Z",
     "tags": [
@@ -1180,6 +1362,20 @@
     "start": "2030-11-25T06:46:57.337Z",
     "tags": [
       "new-moon"
+    ]
+  },
+  {
+    "title": "Total Solar Eclipse",
+    "start": "2030-11-25T06:50:19.626Z",
+    "tags": [
+      "eclipse"
+    ]
+  },
+  {
+    "title": "Penumbral Lunar Eclipse",
+    "start": "2030-12-09T22:27:32.805Z",
+    "tags": [
+      "eclipse"
     ]
   },
   {
