@@ -1,4 +1,6 @@
 ---
+import { Analytics } from '@vercel/analytics/astro';
+---
 const { title = "Earthsong", description = "Whispers of the ancients, secrets of the Earth" } = Astro.props;
 ---
 <html lang="en" class="bg-air text-ink selection:bg-earth/20">
@@ -27,5 +29,14 @@ const { title = "Earthsong", description = "Whispers of the ancients, secrets of
         Walk gently. © {new Date().getFullYear()} Earthsong.
       </div>
     </footer>
+    <html lang="en">
+  <head>
+    <slot name="head" />
+  </head>
+  <body class="bg-ivory text-ink">
+    <slot />
+    <Analytics />
+  </body>
+</html>
   </body>
 </html>
