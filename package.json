@@ -4,6 +4,7 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "generate:cycles": "node scripts/build-cycles.mjs",
         "dev": "astro dev",
         "build": "astro build && node scripts/build-ics.mjs",
         "preview": "astro preview",
@@ -11,6 +12,7 @@
         "format": "prettier -w ."
     },
     "dependencies": {
+        "astronomy-engine": "^2.1.0", 
         "@astrojs/mdx": "^4.3.4",
         "@astrojs/tailwind": "^5.1.0",
         "@tailwindcss/typography": "^0.5.16",
