@@ -1,7 +1,11 @@
-
-const { title = "Earthsong", description = "Whispers of the ancients, secrets of the Earth" } = Astro.props;
 ---
-<html lang="en" class="bg-air text-ink selection:bg-earth/20">
+const {
+  title = "Earthsong",
+  description = "Whispers of the ancients, secrets of the Earth"
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en" class="bg-air text-ink">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -19,9 +23,11 @@ const { title = "Earthsong", description = "Whispers of the ancients, secrets of
         </nav>
       </div>
     </header>
+
     <main class="mx-auto max-w-4xl w-full px-6 py-10 grow">
       <slot />
     </main>
+
     <footer class="border-t border-ink/10 bg-white">
       <div class="mx-auto max-w-4xl px-6 py-6 text-sm text-ink/70">
         Walk gently. © {new Date().getFullYear()} Earthsong.
