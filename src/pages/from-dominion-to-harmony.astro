@@ -1,0 +1,172 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const meta = {
+  title: 'From Dominion to Harmony',
+  description:
+    'Earthsong’s public framework for stewardship through kinship—principles, practice, and a 12-month plan anyone can adopt.',
+  image: '/images/harmony-hero.jpg',
+};
+---
+
+<Layout title={meta.title} description={meta.description} image={meta.image}>
+  <main class="px-6 md:px-8 lg:px-12">
+    <!-- Hero -->
+    <section class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-700 to-teal-800 text-white">
+      <div class="absolute inset-0 opacity-25 bg-[url('/images/leaf-texture.jpg')] bg-cover bg-center"></div>
+      <div class="relative mx-auto max-w-5xl py-16 md:py-24">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight">From Dominion to Harmony</h1>
+        <p class="mt-4 max-w-3xl text-lg md:text-xl text-emerald-50">
+          A shared calling: stewardship through kinship. Practical, measurable, and open to all traditions—and none.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#start-here" class="inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur hover:bg-white/20">Start here</a>
+          <a href="#goals" class="inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur hover:bg-white/20">12-month goals</a>
+          <a href="#faq" class="inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur hover:bg-white/20">FAQ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="mx-auto max-w-3xl prose prose-emerald my-12 md:my-16">
+      <h2>A shared calling: stewardship through kinship</h2>
+      <p>
+        Across many traditions, humans are called to care for the world. At Earthsong, we read that calling as a
+        <strong>both/and</strong>: our uniquely human moral agency is expressed through reverent kinship with the living
+        world. We don’t reject people or progress—we align them with reciprocity, responsibility, and repair.
+      </p>
+      <h3>Why this matters now</h3>
+      <p>
+        The ecological crisis isn’t only technical—it’s ethical. When our stories honor the more-than-human world, our
+        choices follow: what we build, how we consume, and who thrives from it. “Harmony” is simply ethics in action.
+      </p>
+    </section>
+
+    <!-- Principles -->
+    <section class="mx-auto max-w-5xl grid gap-6 md:grid-cols-4">
+      {[
+        { title: 'Reverence', body: 'Treat land, waters, and creatures as worthy of honor, not use alone.' },
+        { title: 'Reciprocity', body: 'Take with care, give back with intention.' },
+        { title: 'Responsibility', body: 'Match love with measurable action.' },
+        { title: 'Repair', body: 'Where harm was done, restore—habitats, soils, and trust.' },
+      ].map((c) => (
+        <div class="rounded-xl border border-emerald-200 bg-white p-5 shadow-sm">
+          <h4 class="text-emerald-900 font-semibold">{c.title}</h4>
+          <p class="mt-2 text-emerald-800/90">{c.body}</p>
+        </div>
+      ))}
+    </section>
+
+    <!-- Sidebar note -->
+    <section class="mx-auto max-w-5xl my-12 md:my-16">
+      <div class="rounded-xl bg-emerald-50 p-6 md:p-8 border border-emerald-200">
+        <h3 class="text-emerald-900 font-semibold">Ancient texts, modern readings</h3>
+        <p class="mt-2 text-emerald-800">
+          We draw inspiration from long-standing teachings on caretaking—Sabbath for the land, tending gardens, gleaning,
+          mercy for creatures. We make no claim these sources were written as modern policy; we choose to read them
+          today as a life-giving ethic for the world we share.
+        </p>
+      </div>
+    </section>
+
+    <!-- Practice Framework -->
+    <section class="mx-auto max-w-5xl my-12 md:my-16">
+      <h2 class="text-3xl font-semibold text-emerald-900">The Practice Framework</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <div class="rounded-xl border border-emerald-200 bg-white p-6">
+          <h4 class="font-semibold text-emerald-900">1) Worship / Reflection</h4>
+          <ul class="mt-3 list-disc pl-5 text-emerald-800/90">
+            <li>Seasonal blessings for waters and trees (public, non-sectarian).</li>
+            <li>“Sabbath for the Land” pauses in community gardens or parks.</li>
+            <li>Gratitude circles that name one local species to learn and protect.</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-white p-6">
+          <h4 class="font-semibold text-emerald-900">2) Learning</h4>
+          <ul class="mt-3 list-disc pl-5 text-emerald-800/90">
+            <li>Primers on soils, watersheds, native species, and pollution.</li>
+            <li>Study groups pairing classic teachings with today’s ecology.</li>
+            <li>Workshops: “Energy 101” for homes & community buildings.</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-white p-6">
+          <h4 class="font-semibold text-emerald-900">3) Service</h4>
+          <ul class="mt-3 list-disc pl-5 text-emerald-800/90">
+            <li>River/stream clean-ups; native plantings and pollinator plots.</li>
+            <li>Habitat days; invasive removal & trail care.</li>
+            <li>Food rescue and gleaning networks to reduce waste.</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-emerald-200 bg-white p-6">
+          <h4 class="font-semibold text-emerald-900">4) Policy & Commons</h4>
+          <ul class="mt-3 list-disc pl-5 text-emerald-800/90">
+            <li>Energy audits and retrofit drives for shared buildings.</li>
+            <li>Local advocacy for tree canopy, clean water, and transit access.</li>
+            <li>Shared purchasing to cut packaging and harmful inputs.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goals -->
+    <section id="goals" class="mx-auto max-w-5xl my-12 md:my-16">
+      <h2 class="text-3xl font-semibold text-emerald-900">12-month interfaith goals</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-4">
+        {[
+          { num: '10+', label: 'shared service days' },
+          { num: '5,000', label: 'native plants established' },
+          { num: '1,000', label: 'volunteer hours' },
+          { num: '−10%', label: 'energy use across buildings' },
+        ].map((g) => (
+          <div class="rounded-xl border border-emerald-200 bg-white p-6 text-center">
+            <div class="text-4xl font-bold text-emerald-900">{g.num}</div>
+            <div class="mt-1 text-emerald-800/90">{g.label}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Start Here -->
+    <section id="start-here" class="mx-auto max-w-5xl my-12 md:my-16">
+      <h2 class="text-3xl font-semibold text-emerald-900">Start here</h2>
+      <ol class="mt-4 space-y-3 text-emerald-800/90">
+        <li>Host a 60-minute “Harmony Circle” with our free guide.</li>
+        <li>Sponsor one native-plant bed or a pollinator patch.</li>
+        <li>Adopt a 1-mile waterway with quarterly care.</li>
+        <li>Complete a basic energy checklist; pick one retrofit.</li>
+        <li>Pledge a reciprocity act: for each new purchase, one repair or reuse.</li>
+      </ol>
+      <div class="mt-8 rounded-xl border border-emerald-200 bg-emerald-50 p-6">
+        <h3 class="font-semibold text-emerald-900">How Earthsong helps</h3>
+        <p class="mt-2 text-emerald-800">
+          We convene service days, publish simple guides, and keep open metrics so wins spread fast.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a href="/subscribe" class="rounded-lg border border-emerald-300 bg-white px-4 py-2 text-sm font-medium text-emerald-900 hover:bg-emerald-100">Subscribe</a>
+          <a href="/volunteer" class="rounded-lg border border-emerald-300 bg-white px-4 py-2 text-sm font-medium text-emerald-900 hover:bg-emerald-100">Volunteer</a>
+          <a href="/partners" class="rounded-lg border border-emerald-300 bg-white px-4 py-2 text-sm font-medium text-emerald-900 hover:bg-emerald-100">Partner with us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="mx-auto max-w-5xl my-12 md:my-16">
+      <h2 class="text-3xl font-semibold text-emerald-900">Common questions</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-3">
+        {[
+          { q: 'Is this anti-human?', a: 'No. It dignifies people and place—stewardship through kinship benefits human life, too.' },
+          { q: 'Is this political?', a: 'It’s ethical and practical. We welcome anyone who’ll work for clean air, water, soil, and community well-being.' },
+          { q: 'Do I need a specific faith?', a: 'No. Earthsong convenes across traditions and welcomes the non-religious. The work is shared.' },
+        ].map((i) => (
+          <div class="rounded-xl border border-emerald-200 bg-white p-6">
+            <h4 class="font-semibold text-emerald-900">{i.q}</h4>
+            <p class="mt-2 text-emerald-800/90">{i.a}</p>
+          </div>
+        ))}
+      </div>
+      <p class="mt-8 text-sm text-emerald-700/80">
+        This page keeps advanced or esoteric practices private by default. To explore deeper materials, become a member and opt-in.
+      </p>
+    </section>
+  </main>
+</Layout>
