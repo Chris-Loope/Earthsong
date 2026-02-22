@@ -1,4 +1,6 @@
 ---
+import SubscribeForm from "@/components/SubscribeForm.astro";
+
 const {
   title = "Earthsong",
   description = "Whispers of the ancients, secrets of the Earth",
@@ -11,6 +13,7 @@ const navLinks = [
   { href: "/codex", label: "Codex" },
   { href: "/calendar", label: "Calendar" },
   { href: "/elders", label: "Elders" },
+  { href: "/newsletter", label: "Newsletter" },
   { href: "/from-dominion-to-harmony", label: "Stewardship" },
 ];
 ---
@@ -102,8 +105,15 @@ const navLinks = [
     )}
 
     <footer class="border-t border-ink/10 bg-white">
-      <div class="mx-auto max-w-4xl px-6 py-6 text-sm text-ink/70">
-        Walk gently. &copy; {new Date().getFullYear()} Earthsong.
+      <div class="mx-auto max-w-4xl px-6 py-8">
+        <!-- Footer subscribe -->
+        <div class="mb-6 max-w-sm">
+          <p class="text-sm font-medium text-ink/80 mb-2">Stay in the Song</p>
+          <SubscribeForm compact />
+        </div>
+        <div class="text-sm text-ink/70">
+          Walk gently. &copy; {new Date().getFullYear()} Earthsong.
+        </div>
       </div>
     </footer>
 
