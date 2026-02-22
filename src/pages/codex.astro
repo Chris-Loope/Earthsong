@@ -6,14 +6,48 @@ import Symbols from "@/content/codex/03-symbols.mdx";
 import Spaces from "@/content/codex/04-spaces.mdx";
 import Compassion from "@/content/codex/05-compassion.mdx";
 import Cycles from "@/content/codex/06-cycles.mdx";
+
+const chapters = [
+  { id: "origin", num: "I", title: "The Origin Symphony" },
+  { id: "roots", num: "II", title: "The Ancient Roots" },
+  { id: "symbols", num: "III", title: "Symbols of the Sacred" },
+  { id: "spaces", num: "IV", title: "Sacred Spaces" },
+  { id: "compassion", num: "V", title: "The Path of Compassion" },
+  { id: "cycles", num: "VI", title: "Sacred Cycles" },
+];
 ---
-<Layout title="The Earthsong Codex">
+<Layout title="The Earthsong Codex" description="Six chapters of Earth-based philosophy: origin, roots, symbols, sacred spaces, compassion, and cycles.">
+  <!-- Table of Contents -->
+  <nav aria-label="Codex chapters" class="mb-10 rounded-xl border border-ink/10 bg-white p-6">
+    <h2 class="text-lg font-semibold text-earth mb-3">Chapters</h2>
+    <ol class="grid gap-1.5 sm:grid-cols-2">
+      {chapters.map(ch => (
+        <li>
+          <a href={`#${ch.id}`} class="flex items-baseline gap-2 text-sm hover:text-earth transition-colors py-0.5">
+            <span class="text-ink/40 font-medium w-6 text-right">{ch.num}</span>
+            <span>{ch.title}</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </nav>
+
   <article class="prose prose-lg max-w-none prose-headings:font-semibold prose-headings:text-earth prose-strong:text-fire">
-    <Origin />
-    <Roots />
-    <Symbols />
-    <Spaces />
-    <Compassion />
-    <Cycles />
+    <section id="origin"><Origin /></section>
+    <hr class="my-10" />
+    <section id="roots"><Roots /></section>
+    <hr class="my-10" />
+    <section id="symbols"><Symbols /></section>
+    <hr class="my-10" />
+    <section id="spaces"><Spaces /></section>
+    <hr class="my-10" />
+    <section id="compassion"><Compassion /></section>
+    <hr class="my-10" />
+    <section id="cycles"><Cycles /></section>
   </article>
+
+  <!-- Back to top -->
+  <div class="mt-10 text-center">
+    <a href="#" class="text-sm text-ink/50 hover:text-earth transition-colors">&uarr; Back to top</a>
+  </div>
 </Layout>

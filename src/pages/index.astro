@@ -1,16 +1,22 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '@/components/Layout.astro';
 import GuideCTA from '@/components/GuideCTA.astro';
+import heroImage from '@/assets/earthsong-hero.jpg';
 ---
 
 <Layout title="Earthsong — A Living Symphony of Nature, Spirit, and Community" fullWidth>
     <!-- Hero Section -->
     <section class="relative text-white">
-      <img
-        src="/earthsong-hero.jpg"
+      <Image
+        src={heroImage}
         alt=""
         role="presentation"
+        widths={[640, 1024, 1536, 2048]}
+        sizes="100vw"
+        quality={80}
         class="absolute inset-0 h-[80vh] w-full object-cover"
+        loading="eager"
       />
       <!-- gradient overlay for readability -->
       <div class="absolute inset-0 h-[80vh] bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
