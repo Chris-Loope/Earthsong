@@ -1,8 +1,18 @@
 ---
 const {
   title = "Earthsong",
-  description = "Whispers of the ancients, secrets of the Earth"
+  description = "Whispers of the ancients, secrets of the Earth",
+  image,
+  fullWidth = false,
 } = Astro.props;
+
+const currentPath = Astro.url.pathname;
+const navLinks = [
+  { href: "/codex", label: "Codex" },
+  { href: "/calendar", label: "Calendar" },
+  { href: "/elders", label: "Elders" },
+  { href: "/from-dominion-to-harmony", label: "Stewardship" },
+];
 ---
 <!doctype html>
 <html lang="en" class="bg-air text-ink">
@@ -11,26 +21,50 @@ const {
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
     <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Earthsong" />
+    {image && <meta property="og:image" content={image} />}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {image && <meta name="twitter:image" content={image} />}
   </head>
   <body class="min-h-screen flex flex-col">
     <header class="border-b border-ink/10 bg-white">
       <div class="mx-auto max-w-4xl px-6 py-4 flex items-center justify-between">
         <a href="/" class="font-semibold tracking-wide">Earthsong</a>
-        <nav class="space-x-5 text-sm">
-          <a href="/codex">Codex</a>
-          <a href="/calendar">Calendar</a>
-          <a href="/elders">Elders</a>
+        <nav aria-label="Main navigation" class="space-x-5 text-sm">
+          {navLinks.map(link => (
+            <a
+              href={link.href}
+              class={currentPath.startsWith(link.href) ? "font-semibold text-earth" : "hover:text-earth transition-colors"}
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
       </div>
     </header>
 
-    <main class="mx-auto max-w-4xl w-full px-6 py-10 grow">
-      <slot />
-    </main>
+    {fullWidth ? (
+      <main class="grow">
+        <slot />
+      </main>
+    ) : (
+      <main class="mx-auto max-w-4xl w-full px-6 py-10 grow">
+        <slot />
+      </main>
+    )}
 
     <footer class="border-t border-ink/10 bg-white">
       <div class="mx-auto max-w-4xl px-6 py-6 text-sm text-ink/70">
-        Walk gently. © {new Date().getFullYear()} Earthsong.
+        Walk gently. &copy; {new Date().getFullYear()} Earthsong.
       </div>
     </footer>
   </body>
