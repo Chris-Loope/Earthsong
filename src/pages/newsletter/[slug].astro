@@ -1,0 +1,84 @@
+---
+import Layout from "@/components/Layout.astro";
+import SubscribeForm from "@/components/SubscribeForm.astro";
+
+export async function getStaticPaths() {
+  const issues = await import.meta.glob("../../content/newsletter/*.mdx", { eager: true }) as Record<string, any>;
+
+  return Object.entries(issues).map(([path, mod]) => {
+    const slug = path.split("/").pop()!.replace(/\.mdx$/, "");
+    return {
+      params: { slug },
+      props: {
+        title: mod.frontmatter.title,
+        issue: mod.frontmatter.issue,
+        date: mod.frontmatter.date,
+        summary: mod.frontmatter.summary,
+        Content: mod.default,
+      },
+    };
+  });
+}
+
+const { title, issue, date, summary, Content } = Astro.props;
+const published = new Date(date);
+
+// Find prev/next issues
+const allIssues = await import.meta.glob("../../content/newsletter/*.mdx", { eager: true }) as Record<string, any>;
+const sorted = Object.entries(allIssues)
+  .map(([path, mod]) => ({
+    slug: path.split("/").pop()!.replace(/\.mdx$/, ""),
+    issue: mod.frontmatter.issue as number,
+    title: mod.frontmatter.title as string,
+  }))
+  .sort((a, b) => a.issue - b.issue);
+
+const currentIdx = sorted.findIndex((s) => s.issue === issue);
+const prev = currentIdx > 0 ? sorted[currentIdx - 1] : null;
+const next = currentIdx < sorted.length - 1 ? sorted[currentIdx + 1] : null;
+---
+
+<Layout title={`${title} — Earthsong Newsletter`} description={summary}>
+  <!-- Breadcrumb -->
+  <nav class="text-sm text-ink/50 mb-6">
+    <a href="/newsletter" class="hover:text-earth transition-colors">Newsletter</a>
+    <span class="mx-2">/</span>
+    <span>#{String(issue).padStart(3, "0")}</span>
+  </nav>
+
+  <!-- Issue meta -->
+  <header class="mb-8">
+    <p class="text-xs font-medium text-ink/40 mb-1">Issue #{String(issue).padStart(3, "0")}</p>
+    <time datetime={published.toISOString().slice(0, 10)} class="text-sm text-ink/60">
+      {published.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })}
+    </time>
+  </header>
+
+  <!-- Issue body -->
+  <article class="prose prose-lg max-w-none prose-headings:font-semibold prose-headings:text-earth prose-strong:text-fire prose-a:text-earth prose-a:underline-offset-2">
+    <Content />
+  </article>
+
+  <!-- Prev / Next navigation -->
+  <nav class="mt-12 flex items-center justify-between gap-4 border-t border-ink/10 pt-6">
+    {prev ? (
+      <a href={`/newsletter/${prev.slug}`} class="text-sm hover:text-earth transition-colors">
+        &larr; #{String(prev.issue).padStart(3, "0")} {prev.title}
+      </a>
+    ) : <span />}
+    {next ? (
+      <a href={`/newsletter/${next.slug}`} class="text-sm hover:text-earth transition-colors text-right">
+        #{String(next.issue).padStart(3, "0")} {next.title} &rarr;
+      </a>
+    ) : <span />}
+  </nav>
+
+  <!-- Subscribe CTA -->
+  <div class="mt-12">
+    <SubscribeForm />
+  </div>
+</Layout>

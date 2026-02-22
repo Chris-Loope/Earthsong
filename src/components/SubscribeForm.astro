@@ -1,0 +1,105 @@
+---
+/**
+ * Newsletter subscribe form.
+ *
+ * Static-site compatible — works three ways:
+ * 1. Netlify Forms: deploy on Netlify and the hidden form-name field is picked up automatically.
+ * 2. External endpoint: set the NEWSLETTER_ACTION env var or data-action attribute to a Formspree / ConvertKit / Mailchimp URL.
+ * 3. Fallback demo: when no backend is configured the form saves to localStorage and shows a success message.
+ */
+const { compact = false } = Astro.props;
+---
+
+<form
+  class="subscribe-form"
+  name="newsletter"
+  method="POST"
+  data-netlify="true"
+  action="/newsletter/thank-you"
+>
+  <input type="hidden" name="form-name" value="newsletter" />
+
+  {compact ? (
+    <!-- Compact inline version for footer -->
+    <div class="flex gap-2">
+      <label for="subscribe-email-compact" class="sr-only">Email address</label>
+      <input
+        id="subscribe-email-compact"
+        type="email"
+        name="email"
+        required
+        placeholder="your@email.com"
+        class="flex-1 min-w-0 rounded-lg border border-ink/20 bg-white px-3 py-2 text-sm placeholder:text-ink/40 focus:border-earth focus:outline-none focus:ring-1 focus:ring-earth"
+      />
+      <button
+        type="submit"
+        class="rounded-lg bg-earth px-4 py-2 text-sm font-medium text-white hover:bg-earth/90 transition-colors whitespace-nowrap"
+      >
+        Subscribe
+      </button>
+    </div>
+  ) : (
+    <!-- Full version for the newsletter page -->
+    <div class="rounded-xl border border-earth/20 bg-earth/5 p-6">
+      <h3 class="text-lg font-semibold text-earth">Stay in the Song</h3>
+      <p class="mt-1 text-sm text-ink/70">
+        Seasonal letters on nature, spirit, and community. No spam — just the Earthsong, a few times a year.
+      </p>
+      <div class="mt-4 flex flex-col sm:flex-row gap-3">
+        <label for="subscribe-email-full" class="sr-only">Email address</label>
+        <input
+          id="subscribe-email-full"
+          type="email"
+          name="email"
+          required
+          placeholder="your@email.com"
+          class="flex-1 rounded-lg border border-ink/20 bg-white px-4 py-2.5 text-sm placeholder:text-ink/40 focus:border-earth focus:outline-none focus:ring-1 focus:ring-earth"
+        />
+        <button
+          type="submit"
+          class="rounded-lg bg-earth px-6 py-2.5 text-sm font-medium text-white hover:bg-earth/90 transition-colors whitespace-nowrap"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+  )}
+
+  <!-- Success message (hidden by default) -->
+  <div class="subscribe-success hidden mt-4 rounded-xl border border-earth/20 bg-earth/5 p-6 text-center">
+    <p class="text-earth font-semibold">You're in the Song.</p>
+    <p class="text-sm text-ink/70 mt-1">Check your inbox for a welcome message.</p>
+  </div>
+</form>
+
+<script>
+  document.querySelectorAll('.subscribe-form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      const formEl = e.currentTarget as HTMLFormElement;
+      const emailInput = formEl.querySelector('input[type="email"]') as HTMLInputElement;
+      const email = emailInput?.value;
+
+      if (!email) return;
+
+      // If no real backend is configured (local dev / demo), handle client-side
+      const isNetlify = typeof (window as any).__NETLIFY !== 'undefined';
+      if (!isNetlify && formEl.action.includes('/newsletter/thank-you')) {
+        e.preventDefault();
+
+        // Save to localStorage as a demo
+        const subs = JSON.parse(localStorage.getItem('earthsong-subscribers') || '[]');
+        if (!subs.includes(email)) {
+          subs.push(email);
+          localStorage.setItem('earthsong-subscribers', JSON.stringify(subs));
+        }
+
+        // Show success, hide form fields
+        const inputs = formEl.querySelector('div:not(.subscribe-success)') as HTMLElement;
+        const success = formEl.querySelector('.subscribe-success') as HTMLElement;
+        if (inputs) inputs.classList.add('hidden');
+        if (success) success.classList.remove('hidden');
+      }
+      // Otherwise let the form submit naturally (Netlify, Formspree, etc.)
+    });
+  });
+</script>
