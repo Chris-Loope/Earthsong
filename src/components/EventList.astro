@@ -1,139 +1,173 @@
 ---
 import events from '../../data/cycle.json';
+
 const sorted = [...events].sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
-const years = [...new Set(sorted.map(e => new Date(e.start).getFullYear()))].sort();
-const tags = [...new Set(sorted.flatMap(e => e.tags || []))].sort();
+const years = [...new Set(sorted.map((event) => new Date(event.start).getFullYear()))].sort();
+const tags = [...new Set(sorted.flatMap((event) => event.tags || []))].sort();
 const currentYear = new Date().getFullYear();
 const defaultYear = years.includes(currentYear) ? currentYear : years[0];
 
 const tagLabels: Record<string, string> = {
   'full-moon': 'Full Moon',
   'new-moon': 'New Moon',
-  'eclipse': 'Eclipse',
-  'season': 'Season',
+  eclipse: 'Eclipse',
+  season: 'Season',
 };
 ---
 
-<!-- Year tabs -->
-<div class="flex flex-wrap gap-2 mb-4" role="tablist" aria-label="Filter by year">
-  {years.map(year => (
-    <button
-      role="tab"
-      data-year={year}
-      aria-selected={year === defaultYear ? "true" : "false"}
-      class:list={[
-        "year-tab px-3 py-1.5 rounded-lg text-sm font-medium transition-colors",
-        year === defaultYear
-          ? "bg-earth text-white"
-          : "bg-ink/5 text-ink/70 hover:bg-ink/10"
-      ]}
-    >
-      {year}
-    </button>
-  ))}
-</div>
-
-<!-- Tag filter chips -->
-<div class="flex flex-wrap gap-2 mb-6" role="group" aria-label="Filter by type">
-  <button
-    data-tag="all"
-    class="tag-chip px-3 py-1 rounded-full text-xs font-medium transition-colors bg-earth text-white"
-  >
-    All
-  </button>
-  {tags.map(tag => (
-    <button
-      data-tag={tag}
-      class="tag-chip px-3 py-1 rounded-full text-xs font-medium transition-colors bg-ink/5 text-ink/70 hover:bg-ink/10"
-    >
-      {tagLabels[tag] || tag}
-    </button>
-  ))}
-</div>
-
-<!-- Event count -->
-<p class="text-sm text-ink/60 mb-4" id="event-count"></p>
-
-<!-- Event list -->
-<ul class="space-y-3" id="event-list">
-  {sorted.map(e => (
-    <li
-      class="event-item rounded border border-ink/10 bg-white p-4"
-      data-year={new Date(e.start).getFullYear()}
-      data-tags={(e.tags || []).join(',')}
-    >
-      <div class="flex items-center gap-2">
-        <span class="font-medium">{e.title}</span>
-        {(e.tags || []).map(tag => (
-          <span class:list={[
-            "inline-block px-2 py-0.5 rounded-full text-[10px] font-medium uppercase tracking-wide",
-            tag === 'eclipse' && "bg-fire/10 text-fire",
-            tag === 'full-moon' && "bg-water/10 text-water",
-            tag === 'new-moon' && "bg-ink/5 text-ink/60",
-            tag === 'season' && "bg-earth/10 text-earth",
-          ]}>{tagLabels[tag] || tag}</span>
+<div class="rounded-lg border border-ink/15 bg-white/55 p-5 shadow-field sm:p-7">
+  <div class="grid gap-6 border-b border-ink/10 pb-6 lg:grid-cols-[1fr_auto] lg:items-end">
+    <div>
+      <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-stone">Year</p>
+      <div class="mt-3 flex flex-wrap gap-2" role="group" aria-label="Filter events by year">
+        {years.map((year) => (
+          <button
+            type="button"
+            data-year={year}
+            aria-pressed={year === defaultYear ? "true" : "false"}
+            class:list={[
+              "year-tab min-h-11 rounded-md border px-4 font-mono text-[10px] font-bold tracking-[0.12em] transition-colors",
+              year === defaultYear
+                ? "border-moss bg-moss text-chalk"
+                : "border-ink/15 text-stone hover:border-moss hover:text-moss",
+            ]}
+          >
+            {year}
+          </button>
         ))}
       </div>
-      <div class="text-sm text-ink/70 mt-1">
-        <time datetime={e.start}>
-          {new Date(e.start).toLocaleDateString('en-US', {
-            year: 'numeric', month: 'long', day: 'numeric',
-            ...(e.start.includes('T') ? { hour: '2-digit', minute: '2-digit' } : {})
-          })}
-        </time>
+    </div>
+
+    <div>
+      <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-stone">Event type</p>
+      <div class="mt-3 flex flex-wrap gap-2" role="group" aria-label="Filter events by type">
+        <button
+          type="button"
+          data-tag="all"
+          aria-pressed="true"
+          class="tag-chip min-h-11 rounded-full border border-ember-dark bg-ember-dark px-4 font-mono text-[9px] font-bold uppercase tracking-[0.1em] text-chalk transition-colors"
+        >
+          All
+        </button>
+        {tags.map((tag) => (
+          <button
+            type="button"
+            data-tag={tag}
+            aria-pressed="false"
+            class="tag-chip min-h-11 rounded-full border border-ink/15 px-4 font-mono text-[9px] font-bold uppercase tracking-[0.1em] text-stone transition-colors hover:border-ember-dark hover:text-ember-dark"
+          >
+            {tagLabels[tag] || tag}
+          </button>
+        ))}
       </div>
-    </li>
-  ))}
-</ul>
+    </div>
+  </div>
+
+  <p class="mt-6 font-mono text-[10px] uppercase tracking-[0.15em] text-stone" id="event-count" aria-live="polite"></p>
+
+  <ul class="mt-3 divide-y divide-ink/10" id="event-list">
+    {sorted.map((event) => {
+      const date = new Date(event.start);
+      return (
+        <li
+          class="event-item grid gap-4 py-5 sm:grid-cols-[90px_1fr] sm:items-center"
+          data-year={date.getFullYear()}
+          data-tags={(event.tags || []).join(',')}
+        >
+          <time datetime={event.start} class="flex items-baseline gap-2 sm:block">
+            <span class="font-display text-3xl uppercase leading-none tracking-[0.04em] text-ink">
+              {date.toLocaleDateString('en-US', { month: 'short' })}
+            </span>
+            <span class="font-display text-3xl leading-none tracking-[0.04em] text-ember-dark sm:ml-2">
+              {date.toLocaleDateString('en-US', { day: '2-digit' })}
+            </span>
+          </time>
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="font-body text-base font-semibold text-ink">{event.title}</span>
+              {(event.tags || []).map((tag) => (
+                <span class:list={[
+                  "inline-flex rounded-full px-2 py-1 font-mono text-[8px] font-bold uppercase tracking-[0.1em]",
+                  tag === 'eclipse' && "bg-ember/10 text-ember-dark",
+                  tag === 'full-moon' && "bg-water/10 text-water",
+                  tag === 'new-moon' && "bg-ink/5 text-ink/65",
+                  tag === 'season' && "bg-moss/10 text-moss",
+                ]}>
+                  {tagLabels[tag] || tag}
+                </span>
+              ))}
+            </div>
+            <p class="mt-1 font-mono text-[9px] uppercase tracking-[0.1em] text-stone">
+              {date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                ...(event.start.includes('T') ? { hour: '2-digit', minute: '2-digit' } : {}),
+              })}
+            </p>
+          </div>
+        </li>
+      );
+    })}
+  </ul>
+</div>
 
 <script define:vars={{ defaultYear }}>
   let activeYear = defaultYear;
   let activeTag = 'all';
 
+  const yearButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.year-tab'));
+  const tagButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.tag-chip'));
+
   function filterEvents() {
-    const items = document.querySelectorAll('.event-item');
+    const items = document.querySelectorAll<HTMLElement>('.event-item');
     let count = 0;
-    items.forEach(item => {
+
+    items.forEach((item) => {
       const itemYear = Number(item.dataset.year);
       const itemTags = item.dataset.tags ? item.dataset.tags.split(',') : [];
-      const yearMatch = itemYear === activeYear;
-      const tagMatch = activeTag === 'all' || itemTags.includes(activeTag);
-      const visible = yearMatch && tagMatch;
-      item.style.display = visible ? '' : 'none';
-      if (visible) count++;
+      const visible = itemYear === activeYear && (activeTag === 'all' || itemTags.includes(activeTag));
+      item.hidden = !visible;
+      if (visible) count += 1;
     });
-    const el = document.getElementById('event-count');
-    if (el) el.textContent = count + ' event' + (count !== 1 ? 's' : '');
+
+    const countElement = document.getElementById('event-count');
+    if (countElement) countElement.textContent = `${count} ${count === 1 ? 'event' : 'events'} in view`;
   }
 
-  document.querySelectorAll('.year-tab').forEach(btn => {
-    btn.addEventListener('click', () => {
-      activeYear = Number(btn.dataset.year);
-      document.querySelectorAll('.year-tab').forEach(b => {
-        b.classList.remove('bg-earth', 'text-white');
-        b.classList.add('bg-ink/5', 'text-ink/70');
-        b.setAttribute('aria-selected', 'false');
-      });
-      btn.classList.remove('bg-ink/5', 'text-ink/70');
-      btn.classList.add('bg-earth', 'text-white');
-      btn.setAttribute('aria-selected', 'true');
+  function setYearButton(button: HTMLButtonElement, selected: boolean) {
+    button.setAttribute('aria-pressed', String(selected));
+    button.classList.toggle('border-moss', selected);
+    button.classList.toggle('bg-moss', selected);
+    button.classList.toggle('text-chalk', selected);
+    button.classList.toggle('border-ink/15', !selected);
+    button.classList.toggle('text-stone', !selected);
+  }
+
+  function setTagButton(button: HTMLButtonElement, selected: boolean) {
+    button.setAttribute('aria-pressed', String(selected));
+    button.classList.toggle('border-ember-dark', selected);
+    button.classList.toggle('bg-ember-dark', selected);
+    button.classList.toggle('text-chalk', selected);
+    button.classList.toggle('border-ink/15', !selected);
+    button.classList.toggle('text-stone', !selected);
+  }
+
+  yearButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      activeYear = Number(button.dataset.year);
+      yearButtons.forEach((candidate) => setYearButton(candidate, candidate === button));
       filterEvents();
     });
   });
 
-  document.querySelectorAll('.tag-chip').forEach(btn => {
-    btn.addEventListener('click', () => {
-      activeTag = btn.dataset.tag;
-      document.querySelectorAll('.tag-chip').forEach(b => {
-        b.classList.remove('bg-earth', 'text-white');
-        b.classList.add('bg-ink/5', 'text-ink/70');
-      });
-      btn.classList.remove('bg-ink/5', 'text-ink/70');
-      btn.classList.add('bg-earth', 'text-white');
+  tagButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      activeTag = button.dataset.tag || 'all';
+      tagButtons.forEach((candidate) => setTagButton(candidate, candidate === button));
       filterEvents();
     });
   });
 
-  // Initial filter
   filterEvents();
 </script>

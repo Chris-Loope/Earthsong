@@ -4,26 +4,20 @@ import SubscribeForm from "@/components/SubscribeForm.astro";
 
 export async function getStaticPaths() {
   const issues = await import.meta.glob("../../content/newsletter/*.mdx", { eager: true }) as Record<string, any>;
-
-  return Object.entries(issues).map(([path, mod]) => {
-    const slug = path.split("/").pop()!.replace(/\.mdx$/, "");
-    return {
-      params: { slug },
-      props: {
-        title: mod.frontmatter.title,
-        issue: mod.frontmatter.issue,
-        date: mod.frontmatter.date,
-        summary: mod.frontmatter.summary,
-        Content: mod.default,
-      },
-    };
-  });
+  return Object.entries(issues).map(([path, mod]) => ({
+    params: { slug: path.split("/").pop()!.replace(/\.mdx$/, "") },
+    props: {
+      title: mod.frontmatter.title,
+      issue: mod.frontmatter.issue,
+      date: mod.frontmatter.date,
+      summary: mod.frontmatter.summary,
+      Content: mod.default,
+    },
+  }));
 }
 
 const { title, issue, date, summary, Content } = Astro.props;
 const published = new Date(date);
-
-// Find prev/next issues
 const allIssues = await import.meta.glob("../../content/newsletter/*.mdx", { eager: true }) as Record<string, any>;
 const sorted = Object.entries(allIssues)
   .map(([path, mod]) => ({
@@ -33,52 +27,54 @@ const sorted = Object.entries(allIssues)
   }))
   .sort((a, b) => a.issue - b.issue);
 
-const currentIdx = sorted.findIndex((s) => s.issue === issue);
-const prev = currentIdx > 0 ? sorted[currentIdx - 1] : null;
-const next = currentIdx < sorted.length - 1 ? sorted[currentIdx + 1] : null;
+const currentIndex = sorted.findIndex((entry) => entry.issue === issue);
+const previous = currentIndex > 0 ? sorted[currentIndex - 1] : null;
+const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
 ---
 
-<Layout title={`${title} — Earthsong Newsletter`} description={summary}>
-  <!-- Breadcrumb -->
-  <nav class="text-sm text-ink/50 mb-6">
-    <a href="/newsletter" class="hover:text-earth transition-colors">Newsletter</a>
-    <span class="mx-2">/</span>
-    <span>#{String(issue).padStart(3, "0")}</span>
+<Layout title={`${title} — Earthsong Seasonal Letters`} description={summary}>
+  <nav aria-label="Breadcrumb" class="font-mono text-[9px] uppercase tracking-[0.13em] text-stone">
+    <a href="/newsletter" class="transition-colors hover:text-ember-dark">Seasonal letters</a>
+    <span aria-hidden="true" class="mx-2 text-ink/25">/</span>
+    <span>Issue #{String(issue).padStart(3, "0")}</span>
   </nav>
 
-  <!-- Issue meta -->
-  <header class="mb-8">
-    <p class="text-xs font-medium text-ink/40 mb-1">Issue #{String(issue).padStart(3, "0")}</p>
-    <time datetime={published.toISOString().slice(0, 10)} class="text-sm text-ink/60">
-      {published.toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      })}
-    </time>
+  <header class="mt-8 border-b border-ink/15 pb-9">
+    <div class="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-[10px] uppercase tracking-[0.14em] text-ember-dark">
+      <span>Issue #{String(issue).padStart(3, "0")}</span>
+      <span aria-hidden="true" class="h-1 w-1 rounded-full bg-ink/30"></span>
+      <time datetime={published.toISOString().slice(0, 10)} class="text-stone">
+        {published.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+      </time>
+    </div>
+    <h1 class="mt-5 max-w-4xl font-display text-6xl uppercase leading-[0.9] tracking-[0.05em] text-ink sm:text-7xl md:text-8xl">{title}</h1>
+    {summary && <p class="mt-6 max-w-3xl font-body text-base italic leading-relaxed text-stone md:text-lg">{summary}</p>}
   </header>
 
-  <!-- Issue body -->
-  <article class="prose prose-lg max-w-none prose-headings:font-semibold prose-headings:text-earth prose-strong:text-fire prose-a:text-earth prose-a:underline-offset-2">
+  <article class="letter-prose prose prose-lg mx-auto mt-12 max-w-3xl prose-earthsong">
     <Content />
   </article>
 
-  <!-- Prev / Next navigation -->
-  <nav class="mt-12 flex items-center justify-between gap-4 border-t border-ink/10 pt-6">
-    {prev ? (
-      <a href={`/newsletter/${prev.slug}`} class="text-sm hover:text-earth transition-colors">
-        &larr; #{String(prev.issue).padStart(3, "0")} {prev.title}
+  <nav aria-label="Seasonal letter navigation" class="mt-16 grid gap-px overflow-hidden rounded-lg bg-ink/15 sm:grid-cols-2">
+    {previous ? (
+      <a href={`/newsletter/${previous.slug}`} class="group bg-chalk p-5 transition-colors hover:bg-white/70">
+        <span class="font-mono text-[9px] uppercase tracking-[0.12em] text-stone">← Previous letter</span>
+        <span class="mt-2 block font-display text-2xl uppercase tracking-[0.05em] text-ink group-hover:text-ember-dark">{previous.title}</span>
       </a>
-    ) : <span />}
+    ) : <span class="hidden bg-chalk sm:block" />}
     {next ? (
-      <a href={`/newsletter/${next.slug}`} class="text-sm hover:text-earth transition-colors text-right">
-        #{String(next.issue).padStart(3, "0")} {next.title} &rarr;
+      <a href={`/newsletter/${next.slug}`} class="group bg-chalk p-5 text-right transition-colors hover:bg-white/70">
+        <span class="font-mono text-[9px] uppercase tracking-[0.12em] text-stone">Next letter →</span>
+        <span class="mt-2 block font-display text-2xl uppercase tracking-[0.05em] text-ink group-hover:text-ember-dark">{next.title}</span>
       </a>
-    ) : <span />}
+    ) : <span class="hidden bg-chalk sm:block" />}
   </nav>
 
-  <!-- Subscribe CTA -->
   <div class="mt-12">
     <SubscribeForm />
   </div>
 </Layout>
+
+<style>
+  .letter-prose :global(h1) { display: none; }
+</style>

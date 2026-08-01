@@ -3,46 +3,134 @@ import { Image } from 'astro:assets';
 import Layout from '@/components/Layout.astro';
 import GuideCTA from '@/components/GuideCTA.astro';
 import heroImage from '@/assets/earthsong-hero.jpg';
+
+const paths = [
+  {
+    num: '01',
+    title: 'The Codex',
+    description: 'Six chapters tracing a living philosophy of origin, kinship, sacred spaces, compassion, and natural rhythm.',
+    href: '/codex',
+    label: 'Begin with the First Note',
+  },
+  {
+    num: '02',
+    title: 'Sacred Cycles',
+    description: 'Follow new moons, full moons, solstices, equinoxes, and eclipses through the turning years.',
+    href: '/calendar',
+    label: 'Follow the turning sky',
+  },
+  {
+    num: '03',
+    title: 'The Elders',
+    description: 'Meet archetypal voices that invite stillness, courage, belonging, deep listening, and stewardship.',
+    href: '/elders',
+    label: 'Listen to the teachings',
+  },
+];
 ---
 
-<Layout title="Earthsong — A Living Symphony of Nature, Spirit, and Community" fullWidth>
-    <!-- Hero Section -->
-    <section class="relative text-white">
-      <Image
-        src={heroImage}
-        alt=""
-        role="presentation"
-        widths={[640, 1024, 1536, 2048]}
-        sizes="100vw"
-        quality={80}
-        class="absolute inset-0 h-[80vh] w-full object-cover"
-        loading="eager"
-      />
-      <!-- gradient overlay for readability -->
-      <div class="absolute inset-0 h-[80vh] bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
+<Layout title="Earthsong — Nature, Spirit, and Community" fullWidth>
+  <section class="relative flex min-h-[88svh] items-end overflow-hidden bg-ink text-chalk">
+    <Image
+      src={heroImage}
+      alt="Sunrise behind a mountain reflected in a forest lake"
+      widths={[640, 1024, 1536, 2048]}
+      sizes="100vw"
+      quality={86}
+      class="absolute inset-0 h-full w-full object-cover object-center"
+      loading="eager"
+    />
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_55%_50%,transparent_0%,rgba(15,15,13,.18)_42%,rgba(15,15,13,.72)_100%)]"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink/85 via-forest/45 to-ink/15"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-ink/20"></div>
 
-      <div class="relative flex h-[80vh] items-center justify-center px-6">
-        <div class="text-center max-w-2xl">
-          <h1 class="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-            Welcome to Earthsong
-          </h1>
-          <p class="text-lg md:text-xl mb-6">
-            A living symphony of nature, spirit, and community.
-          </p>
-          <a
-            href="/codex"
-            class="inline-block bg-white text-gray-900 font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-gray-200 transition"
-          >
-            Explore the Codex
-          </a>
+    <div class="relative mx-auto w-full max-w-6xl px-5 pb-16 pt-36 sm:px-6 md:pb-20 lg:px-8 lg:pb-24">
+      <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.24em] text-ember-light sm:text-xs">
+        A living philosophy · Earth, spirit, community
+      </p>
+      <h1 class="mt-5 max-w-5xl font-display text-[clamp(3.75rem,21vw,10.5rem)] uppercase leading-[0.76] tracking-[0.06em] text-chalk sm:tracking-[0.075em]">
+        Earthsong
+      </h1>
+      <p class="mt-7 max-w-2xl font-body text-xl italic leading-relaxed text-chalk/85 md:text-2xl">
+        A living symphony of nature, spirit, and community.
+      </p>
+      <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+        <a
+          href="/codex"
+          class="inline-flex min-h-12 items-center justify-center rounded-md bg-ember-dark px-6 font-mono text-[10px] font-bold uppercase tracking-[0.15em] text-chalk transition-all hover:-translate-y-0.5 hover:bg-ember-deep"
+        >
+          Explore the Codex
+        </a>
+        <a
+          href="/calendar"
+          class="inline-flex min-h-12 items-center justify-center rounded-md border border-mist/35 bg-ink/20 px-6 font-mono text-[10px] font-bold uppercase tracking-[0.15em] text-chalk backdrop-blur-sm transition-colors hover:border-chalk hover:bg-ink/40"
+        >
+          Follow Sacred Cycles
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-ink/10 bg-chalk">
+    <div class="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-6 md:grid-cols-[.8fr_1.2fr] md:py-24 lg:px-8">
+      <div>
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-ember-dark">The invitation</p>
+        <h2 class="mt-4 font-display text-5xl uppercase leading-[0.94] tracking-[0.055em] text-ink sm:text-6xl">
+          Remember your place in the living world.
+        </h2>
+      </div>
+      <div class="md:pt-8">
+        <p class="font-body text-lg leading-[1.85] text-stone">
+          Earthsong begins with a simple premise: the world is not a backdrop to human life, but a living relationship. Its teachings invite reverence without dogma, action without domination, and community rooted in reciprocity.
+        </p>
+        <a href="/from-dominion-to-harmony" class="mt-7 inline-flex items-center border-b border-ember/40 pb-1 font-mono text-[10px] font-bold uppercase tracking-[0.15em] text-ember-dark transition-colors hover:border-ember-dark">
+          Read the stewardship framework <span aria-hidden="true" class="ml-3">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-chalk">
+    <div class="mx-auto max-w-6xl px-5 py-16 sm:px-6 md:py-24 lg:px-8">
+      <div class="flex flex-col gap-4 border-b border-ink/15 pb-7 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-ember-dark">Three ways in</p>
+          <h2 class="mt-3 font-display text-5xl uppercase tracking-[0.055em] text-ink">Begin listening</h2>
         </div>
+        <p class="max-w-md font-body text-sm leading-relaxed text-stone">Enter through story, sky, or teaching. Each path returns to the same relationship.</p>
       </div>
-    </section>
 
-    <!-- Guide CTA Section -->
-    <section class="bg-emerald-50 border-t border-b border-emerald-200 py-16 px-6">
-      <div class="mx-auto max-w-4xl text-center">
-        <GuideCTA />
+      <div class="grid md:grid-cols-3">
+        {paths.map((path) => (
+          <a href={path.href} class="group relative border-b border-ink/15 py-9 md:border-b-0 md:border-r md:px-7 md:first:pl-0 md:last:border-r-0 md:last:pr-0">
+            <span class="font-mono text-[10px] font-semibold tracking-[0.18em] text-ember-dark">{path.num}</span>
+            <h3 class="mt-6 font-display text-4xl uppercase tracking-[0.055em] text-ink transition-colors group-hover:text-ember-dark">{path.title}</h3>
+            <p class="mt-3 font-body text-sm leading-[1.75] text-stone">{path.description}</p>
+            <span class="mt-7 inline-flex font-mono text-[9px] font-bold uppercase tracking-[0.13em] text-ink">
+              {path.label} <span aria-hidden="true" class="ml-3 text-ember transition-transform group-hover:translate-x-1">→</span>
+            </span>
+          </a>
+        ))}
       </div>
-    </section>
+    </div>
+  </section>
+
+  <section class="bg-chalk px-5 pb-16 sm:px-6 md:pb-24 lg:px-8">
+    <div class="mx-auto max-w-6xl">
+      <GuideCTA />
+    </div>
+  </section>
+
+  <section class="texture-paper border-t border-ink/10">
+    <div class="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-16 sm:px-6 md:flex-row md:items-center md:justify-between md:py-20 lg:px-8">
+      <div class="max-w-2xl">
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-ember-dark">Seasonal correspondence</p>
+        <h2 class="mt-3 font-display text-5xl uppercase leading-none tracking-[0.05em] text-ink">Letters from the turning year</h2>
+        <p class="mt-4 font-body text-base leading-relaxed text-stone">Reflections published around the solstices and equinoxes—meant to be read slowly.</p>
+      </div>
+      <a href="/newsletter" class="inline-flex min-h-12 shrink-0 items-center justify-center rounded-md border border-ink/25 px-6 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-ink transition-colors hover:border-ember-dark hover:text-ember-dark">
+        Read the letters
+      </a>
+    </div>
+  </section>
 </Layout>

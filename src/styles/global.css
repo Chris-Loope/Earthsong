@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("/fonts/Lora-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("/fonts/Lora-Italic-Variable.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --forest: #1a2e1a;
+  --moss: #3d5c2e;
+  --stone: #6f5a43;
+  --ember: #c94b1a;
+  --ember-dark: #a83c14;
+  --mist: #d4cfc4;
+  --chalk: #f5f2ec;
+  --ink: #0f0f0d;
+}
+
+html {
+  background: var(--chalk);
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(
+      circle at 10% 0%,
+      rgba(61, 92, 46, 0.055),
+      transparent 26rem
+    ),
+    var(--chalk);
+  color: var(--ink);
+  font-family: "Lora", Georgia, serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(201, 75, 26, 0.22);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ember-dark);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  transform: translateY(-150%);
+  border-radius: 0.375rem;
+  background: var(--chalk);
+  color: var(--ink);
+  padding: 0.75rem 1rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.field-rule {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(15, 15, 13, 0.22), transparent);
+}
+
+.texture-paper {
+  background-image:
+    linear-gradient(rgba(245, 242, 236, 0.95), rgba(245, 242, 236, 0.95)),
+    url("/leaf-texture.jpg");
+  background-size: cover;
+}
+
+.prose-earthsong {
+  color: var(--stone);
+  font-family: "Lora", Georgia, serif;
+}
+
+.prose-earthsong :where(h1, h2, h3, h4) {
+  color: var(--ink);
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.prose-earthsong :where(h1) {
+  font-size: clamp(2.75rem, 6vw, 4.75rem);
+  line-height: 0.95;
+}
+
+.prose-earthsong :where(h2) {
+  margin-top: 2.6em;
+  border-top: 1px solid rgba(15, 15, 13, 0.13);
+  padding-top: 1.2em;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.prose-earthsong :where(h3) {
+  font-size: 1.45rem;
+}
+
+.prose-earthsong :where(p, li) {
+  line-height: 1.85;
+}
+
+.prose-earthsong :where(strong) {
+  color: var(--ink);
+}
+
+.prose-earthsong :where(a) {
+  color: var(--ember-dark);
+  text-decoration-color: rgba(168, 60, 20, 0.35);
+  text-underline-offset: 0.2em;
+}
+
+.prose-earthsong :where(blockquote) {
+  border-left-color: var(--ember);
+  color: var(--forest);
+  font-style: italic;
+}
+
+.prose-earthsong :where(hr) {
+  border-color: rgba(15, 15, 13, 0.13);
+}
+
+.prose-earthsong :where(ol > li)::marker,
+.prose-earthsong :where(ul > li)::marker {
+  color: var(--ember-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

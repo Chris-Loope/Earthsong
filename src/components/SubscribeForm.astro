@@ -1,105 +1,77 @@
 ---
-/**
- * Newsletter subscribe form.
- *
- * Static-site compatible — works three ways:
- * 1. Netlify Forms: deploy on Netlify and the hidden form-name field is picked up automatically.
- * 2. External endpoint: set the NEWSLETTER_ACTION env var or data-action attribute to a Formspree / ConvertKit / Mailchimp URL.
- * 3. Fallback demo: when no backend is configured the form saves to localStorage and shows a success message.
- */
 const { compact = false } = Astro.props;
+const newsletterAction = import.meta.env.PUBLIC_NEWSLETTER_ACTION;
+const configured = Boolean(newsletterAction);
+const inputId = compact ? "subscribe-email-footer" : "subscribe-email-page";
 ---
 
-<form
-  class="subscribe-form"
-  name="newsletter"
-  method="POST"
-  data-netlify="true"
-  action="/newsletter/thank-you"
->
-  <input type="hidden" name="form-name" value="newsletter" />
-
-  {compact ? (
-    <!-- Compact inline version for footer -->
-    <div class="flex gap-2">
-      <label for="subscribe-email-compact" class="sr-only">Email address</label>
-      <input
-        id="subscribe-email-compact"
-        type="email"
-        name="email"
-        required
-        placeholder="your@email.com"
-        class="flex-1 min-w-0 rounded-lg border border-ink/20 bg-white px-3 py-2 text-sm placeholder:text-ink/40 focus:border-earth focus:outline-none focus:ring-1 focus:ring-earth"
-      />
-      <button
-        type="submit"
-        class="rounded-lg bg-earth px-4 py-2 text-sm font-medium text-white hover:bg-earth/90 transition-colors whitespace-nowrap"
-      >
-        Subscribe
-      </button>
-    </div>
-  ) : (
-    <!-- Full version for the newsletter page -->
-    <div class="rounded-xl border border-earth/20 bg-earth/5 p-6">
-      <h3 class="text-lg font-semibold text-earth">Stay in the Song</h3>
-      <p class="mt-1 text-sm text-ink/70">
-        Seasonal letters on nature, spirit, and community. No spam — just the Earthsong, a few times a year.
-      </p>
-      <div class="mt-4 flex flex-col sm:flex-row gap-3">
-        <label for="subscribe-email-full" class="sr-only">Email address</label>
+{configured ? (
+  <form
+    class="subscribe-form"
+    name="newsletter"
+    method="POST"
+    action={newsletterAction}
+  >
+    {compact ? (
+      <div class="flex flex-col gap-2 sm:flex-row">
+        <label for={inputId} class="sr-only">Email address</label>
         <input
-          id="subscribe-email-full"
+          id={inputId}
           type="email"
           name="email"
           required
+          autocomplete="email"
           placeholder="your@email.com"
-          class="flex-1 rounded-lg border border-ink/20 bg-white px-4 py-2.5 text-sm placeholder:text-ink/40 focus:border-earth focus:outline-none focus:ring-1 focus:ring-earth"
+          class="min-h-11 min-w-0 flex-1 rounded-md border border-mist/20 bg-white/5 px-3 py-2 font-body text-sm text-chalk placeholder:text-mist/40 focus:border-ember focus:outline-none"
         />
         <button
           type="submit"
-          class="rounded-lg bg-earth px-6 py-2.5 text-sm font-medium text-white hover:bg-earth/90 transition-colors whitespace-nowrap"
+          class="min-h-11 rounded-md bg-ember-dark px-5 py-2 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-chalk transition-colors hover:bg-ember-deep"
         >
           Subscribe
         </button>
       </div>
-    </div>
-  )}
-
-  <!-- Success message (hidden by default) -->
-  <div class="subscribe-success hidden mt-4 rounded-xl border border-earth/20 bg-earth/5 p-6 text-center">
-    <p class="text-earth font-semibold">You're in the Song.</p>
-    <p class="text-sm text-ink/70 mt-1">Check your inbox for a welcome message.</p>
+    ) : (
+      <div class="rounded-lg border border-moss/20 bg-white/65 p-6 shadow-field sm:p-8">
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">Seasonal letters</p>
+        <h2 class="mt-3 font-display text-4xl uppercase tracking-[0.05em] text-ink">Stay in the Song</h2>
+        <p class="mt-2 max-w-2xl font-body text-sm leading-relaxed text-stone">
+          Reflections on nature, spirit, and community—sent around the solstices and equinoxes.
+        </p>
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <label for={inputId} class="sr-only">Email address</label>
+          <input
+            id={inputId}
+            type="email"
+            name="email"
+            required
+            autocomplete="email"
+            placeholder="your@email.com"
+            class="min-h-12 flex-1 rounded-md border border-ink/20 bg-chalk px-4 py-2.5 font-body text-sm text-ink placeholder:text-stone focus:border-ember-dark focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="min-h-12 rounded-md bg-ember-dark px-6 py-2.5 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-chalk transition-colors hover:bg-ember-deep"
+          >
+            Join the letter
+          </button>
+        </div>
+      </div>
+    )}
+  </form>
+) : compact ? (
+  <a
+    href="/newsletter"
+    class="inline-flex min-h-11 items-center rounded-md border border-mist/20 px-4 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-chalk transition-colors hover:border-ember-light hover:text-ember-light"
+  >
+    Read the seasonal letters →
+  </a>
+) : (
+  <div class="rounded-lg border border-moss/20 bg-white/65 p-6 shadow-field sm:p-8">
+    <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">Seasonal letters</p>
+    <h2 class="mt-3 font-display text-4xl uppercase tracking-[0.05em] text-ink">Stay in the Song</h2>
+    <p class="mt-2 max-w-2xl font-body text-sm leading-relaxed text-stone">
+      The next letter is taking shape. Until delivery is connected, return here at the solstices and equinoxes to read the latest note.
+    </p>
   </div>
-</form>
-
-<script>
-  document.querySelectorAll('.subscribe-form').forEach(form => {
-    form.addEventListener('submit', (e) => {
-      const formEl = e.currentTarget as HTMLFormElement;
-      const emailInput = formEl.querySelector('input[type="email"]') as HTMLInputElement;
-      const email = emailInput?.value;
-
-      if (!email) return;
-
-      // If no real backend is configured (local dev / demo), handle client-side
-      const isNetlify = typeof (window as any).__NETLIFY !== 'undefined';
-      if (!isNetlify && formEl.action.includes('/newsletter/thank-you')) {
-        e.preventDefault();
-
-        // Save to localStorage as a demo
-        const subs = JSON.parse(localStorage.getItem('earthsong-subscribers') || '[]');
-        if (!subs.includes(email)) {
-          subs.push(email);
-          localStorage.setItem('earthsong-subscribers', JSON.stringify(subs));
-        }
-
-        // Show success, hide form fields
-        const inputs = formEl.querySelector('div:not(.subscribe-success)') as HTMLElement;
-        const success = formEl.querySelector('.subscribe-success') as HTMLElement;
-        if (inputs) inputs.classList.add('hidden');
-        if (success) success.classList.remove('hidden');
-      }
-      // Otherwise let the form submit naturally (Netlify, Formspree, etc.)
-    });
-  });
-</script>
+)}

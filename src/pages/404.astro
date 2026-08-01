@@ -1,0 +1,19 @@
+---
+import Layout from '@/components/Layout.astro';
+---
+
+<Layout title="Path Not Found — Earthsong" description="The path you followed could not be found." fullWidth>
+  <section class="relative flex min-h-[70svh] items-center overflow-hidden bg-forest text-chalk">
+    <div class="absolute inset-0 bg-[url('/leaf-texture.jpg')] bg-cover bg-center opacity-10"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink/75 to-forest/55"></div>
+    <div class="relative mx-auto w-full max-w-6xl px-5 py-24 sm:px-6 lg:px-8">
+      <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-ember-light">404 · Path not found</p>
+      <h1 class="mt-4 max-w-3xl font-display text-6xl uppercase leading-[0.9] tracking-[0.05em] sm:text-7xl md:text-8xl">The trail goes quiet here.</h1>
+      <p class="mt-6 max-w-xl font-body text-base leading-relaxed text-mist/75">Return to the beginning, or find your way through one of Earthsong’s public paths.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="/" class="inline-flex min-h-12 items-center justify-center rounded-md bg-ember-dark px-6 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-chalk transition-colors hover:bg-ember-deep">Return home</a>
+        <a href="/codex" class="inline-flex min-h-12 items-center justify-center rounded-md border border-mist/25 px-6 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-chalk transition-colors hover:border-chalk">Open the Codex</a>
+      </div>
+    </div>
+  </section>
+</Layout>
