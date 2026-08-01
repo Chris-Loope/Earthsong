@@ -7,6 +7,8 @@ The project is earnest about nature and light about itself. It is not an active 
 ## Public site
 
 - `/about` — the origin, relationship to TAG and Shangralachia, and working principles
+- `/privacy` — the site's data-minimization and hosting policy
+- `/accessibility` — the WCAG 2.2 Level AA target, audit scope, and barrier-reporting process
 - `/codex` — six chapters of the current Earthsong philosophy
 - `/calendar` — UTC lunar phases, solstices, equinoxes, and eclipses from 2025–2030
 - `/newsletter` — seasonal letters and field notes

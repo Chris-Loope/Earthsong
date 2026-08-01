@@ -1,0 +1,114 @@
+---
+import Layout from '@/components/Layout.astro';
+import PageHeader from '@/components/PageHeader.astro';
+---
+
+<Layout
+  title="Accessibility Policy — Earthsong"
+  description="Earthsong’s WCAG 2.2 Level AA target, current accessibility practices, testing scope, known limitations, and barrier-reporting process."
+>
+  <PageHeader
+    eyebrow="Policy · Last reviewed August 1, 2026"
+    title="Access belongs in the path"
+    description="Earthsong should be available without requiring a particular body, device, input method, or way of reading. This page names the standard, the work completed, and the gaps still open."
+  />
+
+  <article class="policy-prose prose prose-lg mt-12 max-w-3xl prose-earthsong">
+    <aside class="not-prose rounded-lg border border-moss/20 bg-white/60 p-6 shadow-field sm:p-8" aria-labelledby="accessibility-target">
+      <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-ember-dark">The target</p>
+      <h2 id="accessibility-target" class="policy-card-title mt-3 font-display text-4xl uppercase tracking-[0.05em] text-ink">WCAG 2.2 Level AA</h2>
+      <p class="mt-4 font-body text-sm leading-[1.8] text-stone">
+        Earthsong targets the Level A and AA success criteria across its public pages. This is an ongoing self-assessment, not a claim of third-party certification or a promise that every reader will encounter no barrier.
+      </p>
+    </aside>
+
+    <h2>Our standard</h2>
+
+    <p>
+      This policy follows the human-rights and technical foundations used by <a href="https://pedagogue.co/accessibility">Pedagogue Systems</a>.
+    </p>
+
+    <h3>Article 9 of the CRPD</h3>
+
+    <p>
+      The <a href="https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-persons-disabilities">United Nations Convention on the Rights of Persons with Disabilities</a> treats access to information and communications technologies as part of equal participation. Accessibility is not a decorative feature added after the important work; it is part of the work.
+    </p>
+
+    <h3>WCAG 2.2 Level AA</h3>
+
+    <p>
+      The <a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines 2.2</a> provide testable requirements for perceivable, operable, understandable, and robust web content. Earthsong uses Level AA as its technical floor while recognizing that WCAG cannot describe every person's needs.
+    </p>
+
+    <h2>What this site supports</h2>
+
+    <ul>
+      <li>Semantic page landmarks, a skip link, one visible first-level heading, and a unique title on each content page.</li>
+      <li>Keyboard access to navigation, links, calendar filters, and any configured form controls, with a visible focus indicator.</li>
+      <li>Text alternatives for meaningful images and text labels for interactive controls.</li>
+      <li>Foreground and background colors selected to meet Level AA contrast for their text size and use.</li>
+      <li>Responsive reflow without horizontal page scrolling at narrow widths.</li>
+      <li>Motion reduced when a visitor enables the operating system's reduced-motion preference.</li>
+      <li>Locally served fonts and static HTML content. JavaScript is limited to the mobile navigation and calendar filters.</li>
+      <li>No autoplaying audio, video, flashing content, drag-only interactions, accessibility overlays, or automated remediation widgets.</li>
+    </ul>
+
+    <h2>The policy</h2>
+
+    <h3>Scope</h3>
+
+    <p>
+      The target covers every public page on earthsong.io: the homepage, About, Codex, Sky &amp; Season, Harmony, Seasonal Letters and each issue, the 404 page, and the privacy and accessibility policies. Redirect pages are included in structural checks. The downloadable calendar is plain-text calendar data; its use after download depends on the accessibility of the reader's chosen calendar application.
+    </p>
+
+    <p>
+      External scientific sources, Shangralachia, Pedagogue Systems, ChatGPT, and other linked destinations are outside this site's conformance scope.
+    </p>
+
+    <h3>How we test</h3>
+
+    <p>
+      The August 2026 self-assessment included semantic HTML and accessible-name checks across the generated site; heading, landmark, label, image-text, and duplicate-ID checks; mathematical contrast checks against the Earthsong palette; keyboard-only navigation; visible focus; menu and filter states; reduced-motion rules; and responsive layouts at desktop, mobile, and 320-pixel reflow widths.
+    </p>
+
+    <p>
+      Automated and source-level checks are useful but incomplete. They do not replace testing by people with disabilities or a structured review with multiple screen readers and browser combinations.
+    </p>
+
+    <h3>Known limitations</h3>
+
+    <ul>
+      <li>Earthsong has not yet completed an independent third-party accessibility audit.</li>
+      <li>This review did not complete a formal VoiceOver, NVDA, or other assistive-technology test matrix.</li>
+      <li>Long Codex chapters and source lists may still create cognitive load even when their markup conforms.</li>
+      <li>The behavior of external pages and calendar applications is outside Earthsong's control.</li>
+      <li>If an external newsletter provider is enabled, its form flow must be reviewed before launch.</li>
+    </ul>
+
+    <h3>Report a barrier</h3>
+
+    <p>
+      If something prevents you from reading or using Earthsong, please use the <a href="https://pedagogue.co/interest?topic=question">Pedagogue Systems question form</a>. If you can, include the Earthsong page address, what you were trying to do, what happened, and the browser, device, or assistive technology involved. You do not need to disclose a disability.
+    </p>
+
+    <p>
+      We aim to acknowledge an accessibility report within seven days and either resolve it or provide a concrete timetable within thirty days. Acknowledgement is not the same as resolution; the barrier remains open until the affected path works or an effective alternative is available.
+    </p>
+
+    <h3>Changes</h3>
+
+    <p>
+      Meaningful changes to the target, scope, known limitations, or reporting process will be dated on this page. Newly published page patterns should be reviewed before release, and the full site should be checked again after substantial design or platform changes.
+    </p>
+
+    <h3>Who maintains Earthsong</h3>
+
+    <p>
+      Earthsong is maintained by Pedagogue Systems, Inc. Barrier reports and questions are handled through the <a href="https://pedagogue.co/interest?topic=question">Pedagogue Systems question form</a> under its <a href="https://pedagogue.co/privacy">privacy policy</a>.
+    </p>
+
+    <hr />
+
+    <p><strong>Last reviewed:</strong> August 1, 2026.</p>
+  </article>
+</Layout>

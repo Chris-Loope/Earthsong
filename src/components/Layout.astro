@@ -87,7 +87,7 @@ const navLinks = [
           id="menu-toggle"
           type="button"
           class="flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-md border border-mist/20 text-chalk md:hidden"
-          aria-label="Toggle navigation"
+          aria-label="Open navigation"
           aria-controls="mobile-menu"
           aria-expanded="false"
         >
@@ -169,7 +169,13 @@ const navLinks = [
       <div class="border-t border-mist/10">
         <div class="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 font-mono text-[10px] uppercase tracking-[0.16em] text-mist/65 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <span>Walk gently. © {new Date().getFullYear()} Earthsong.</span>
-          <span>Nature · Community · Possibility</span>
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <nav aria-label="Policies" class="flex gap-4">
+              <a href="/privacy" class="transition-colors hover:text-chalk">Privacy</a>
+              <a href="/accessibility" class="transition-colors hover:text-chalk">Accessibility</a>
+            </nav>
+            <span>Nature · Community · Possibility</span>
+          </div>
         </div>
       </div>
     </footer>
@@ -182,6 +188,7 @@ const navLinks = [
         if (!toggle || !menu) return;
         menu.classList.toggle('hidden', !open);
         toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
         const bars = toggle.querySelectorAll('.hamburger-bar');
         bars[0]?.classList.toggle('translate-y-[7px]', open);
         bars[0]?.classList.toggle('rotate-45', open);
