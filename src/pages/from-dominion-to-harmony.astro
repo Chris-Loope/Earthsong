@@ -1,64 +1,65 @@
 ---
 import Layout from '@/components/Layout.astro';
 
-const meta = {
-  title: 'From Dominion to Harmony — Earthsong',
-  description: 'Earthsong’s public framework for stewardship through kinship—principles, practice, and a 12-month plan anyone can adopt.',
-};
-
 const principles = [
-  { num: '01', title: 'Reverence', body: 'Treat land, waters, and creatures as worthy of honor—not use alone.' },
-  { num: '02', title: 'Reciprocity', body: 'Take with care, give back with intention, and keep the exchange visible.' },
-  { num: '03', title: 'Responsibility', body: 'Match love with measurable action and shared accountability.' },
-  { num: '04', title: 'Repair', body: 'Where harm was done, restore habitats, soils, waters, and trust.' },
+  {
+    num: '01',
+    title: 'Attention',
+    body: 'Notice the actual place: its watershed, seasons, species, histories, limits, and the people whose knowledge is rooted there.',
+  },
+  {
+    num: '02',
+    title: 'Proportion',
+    body: 'Match the scale of a choice to the scale of its effects. Enough can be a better measure than more.',
+  },
+  {
+    num: '03',
+    title: 'Reciprocity',
+    body: 'Make visible what a household, project, or community receives from a place, then ask what care should travel in return.',
+  },
+  {
+    num: '04',
+    title: 'Repair',
+    body: 'When harm is known, begin with what can genuinely be mended, maintained, restored, or prevented from happening again.',
+  },
 ];
 
 const practices = [
   {
     num: '01',
-    title: 'Reflection',
-    items: ['Seasonal blessings for waters and trees.', 'Sabbath-for-the-land pauses in gardens or parks.', 'Gratitude circles that name one local species to protect.'],
+    title: 'Learn one place',
+    body: 'Name your watershed and one species that lives nearby. Learn what each needs, what pressures it faces, and who is already doing credible work there.',
   },
   {
     num: '02',
-    title: 'Learning',
-    items: ['Primers on soils, watersheds, native species, and pollution.', 'Study groups pairing classic teachings with present-day ecology.', 'Practical energy workshops for homes and community buildings.'],
+    title: 'Follow one flow',
+    body: 'Trace one ordinary resource—water, electricity, food, or waste—from source to use to aftermath. Let the full path inform one choice.',
   },
   {
     num: '03',
-    title: 'Service',
-    items: ['River and stream cleanups; native plantings and pollinator plots.', 'Habitat days, invasive removal, and trail care.', 'Food rescue and gleaning networks that reduce waste.'],
+    title: 'Keep something useful',
+    body: 'Maintain, mend, refill, share, or buy used before replacing. Repair is not a complete environmental strategy, but it is a practical habit of attention.',
   },
   {
     num: '04',
-    title: 'Commons',
-    items: ['Energy audits and retrofit drives for shared buildings.', 'Local advocacy for tree canopy, clean water, and transit access.', 'Shared purchasing that cuts packaging and harmful inputs.'],
+    title: 'Support work already underway',
+    body: 'Look for local groups with knowledge, consent, and a record of care. Listen before helping, and contribute in the form they say is useful.',
   },
 ];
 
-const goals = [
-  { num: '10+', label: 'shared service days' },
-  { num: '5,000', label: 'native plants established' },
-  { num: '1,000', label: 'volunteer hours' },
-  { num: '−10%', label: 'energy use across buildings' },
-];
-
-const steps = [
-  'Host a 60-minute Harmony Circle with the free guide.',
-  'Sponsor one native-plant bed or pollinator patch.',
-  'Adopt a one-mile waterway with quarterly care.',
-  'Complete a basic energy checklist and choose one retrofit.',
-  'For each new purchase, make one act of repair or reuse.',
-];
-
-const faqs = [
-  { q: 'Is this anti-human?', a: 'No. It dignifies people and place. Stewardship through kinship benefits human life, too.' },
-  { q: 'Is this political?', a: 'It is ethical and practical. We welcome anyone willing to work for clean air, water, soil, and community well-being.' },
-  { q: 'Do I need a specific faith?', a: 'No. Earthsong convenes across traditions and welcomes the non-religious. The work is shared.' },
+const questions = [
+  'What changed in the living world around me this season?',
+  'What did I learn that corrected an assumption?',
+  'Which choice created more care, and which only felt symbolic?',
+  'What is one useful practice worth carrying into the next season?',
 ];
 ---
 
-<Layout title={meta.title} description={meta.description} fullWidth>
+<Layout
+  title="From Dominion to Harmony — Earthsong"
+  description="A public thought experiment about treating the living world as a participant in human choices rather than scenery around them."
+  fullWidth
+>
   <section class="relative overflow-hidden bg-forest text-chalk">
     <div class="absolute inset-0 bg-[url('/leaf-texture.jpg')] bg-cover bg-center opacity-10"></div>
     <div class="absolute inset-0 bg-gradient-to-r from-ink/70 via-forest/80 to-forest/30"></div>
@@ -66,31 +67,38 @@ const faqs = [
     <div class="pointer-events-none absolute right-8 top-4 h-72 w-72 rounded-full border border-ember/25"></div>
 
     <div class="relative mx-auto max-w-6xl px-5 py-20 sm:px-6 md:py-28 lg:px-8">
-      <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.24em] text-ember-light">A public stewardship framework</p>
+      <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.24em] text-ember-light">A public thought experiment</p>
       <h1 class="mt-5 max-w-5xl font-display text-[clamp(4.25rem,10vw,8.5rem)] uppercase leading-[0.82] tracking-[0.055em]">
-        From Dominion<br />to Harmony
+        From Dominion<br /> to Harmony
       </h1>
       <p class="mt-7 max-w-3xl font-body text-lg leading-relaxed text-mist/80 md:text-xl">
-        A shared calling: stewardship through kinship. Practical, measurable, and open to all traditions—and none.
+        What changes when the natural world is treated as a participant in our choices rather than scenery around them?
       </p>
       <nav aria-label="On this page" class="mt-9 flex flex-wrap gap-2">
-        <a href="#principles" class="inline-flex min-h-11 items-center rounded-full border border-mist/25 px-4 font-mono text-[9px] font-bold uppercase tracking-[0.12em] transition-colors hover:border-ember-light hover:text-ember-light">Principles</a>
-        <a href="#practice" class="inline-flex min-h-11 items-center rounded-full border border-mist/25 px-4 font-mono text-[9px] font-bold uppercase tracking-[0.12em] transition-colors hover:border-ember-light hover:text-ember-light">Practice</a>
-        <a href="#goals" class="inline-flex min-h-11 items-center rounded-full border border-mist/25 px-4 font-mono text-[9px] font-bold uppercase tracking-[0.12em] transition-colors hover:border-ember-light hover:text-ember-light">12-month goals</a>
-        <a href="#start-here" class="inline-flex min-h-11 items-center rounded-full border border-mist/25 px-4 font-mono text-[9px] font-bold uppercase tracking-[0.12em] transition-colors hover:border-ember-light hover:text-ember-light">Start here</a>
+        <a href="#question" class="inline-flex min-h-11 items-center rounded-full border border-mist/25 px-4 font-mono text-[9px] font-bold uppercase tracking-[0.12em] transition-colors hover:border-ember-light hover:text-ember-light">The question</a>
+        <a href="#principles" class="inline-flex min-h-11 items-center rounded-full border border-mist/25 px-4 font-mono text-[9px] font-bold uppercase tracking-[0.12em] transition-colors hover:border-ember-light hover:text-ember-light">Four lenses</a>
+        <a href="#practice" class="inline-flex min-h-11 items-center rounded-full border border-mist/25 px-4 font-mono text-[9px] font-bold uppercase tracking-[0.12em] transition-colors hover:border-ember-light hover:text-ember-light">Individual practice</a>
+        <a href="#seasonal-check-in" class="inline-flex min-h-11 items-center rounded-full border border-mist/25 px-4 font-mono text-[9px] font-bold uppercase tracking-[0.12em] transition-colors hover:border-ember-light hover:text-ember-light">Seasonal check-in</a>
       </nav>
     </div>
   </section>
 
-  <section class="border-b border-ink/10 bg-chalk">
+  <section id="question" class="scroll-mt-24 border-b border-ink/10 bg-chalk">
     <div class="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-6 md:grid-cols-[.7fr_1.3fr] md:py-24 lg:px-8">
       <div>
-        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">Why this matters</p>
-        <h2 class="mt-3 font-display text-5xl uppercase leading-[0.94] tracking-[0.05em] text-ink">Ethics become visible through action.</h2>
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">A change of posture</p>
+        <h2 class="mt-3 font-display text-5xl uppercase leading-[0.94] tracking-[0.05em] text-ink sm:text-6xl">Not master of a backdrop, but participant in a system.</h2>
       </div>
       <div class="space-y-5 font-body text-base leading-[1.85] text-stone md:text-lg">
-        <p>Across many traditions, humans are called to care for the world. Earthsong reads that calling as a both/and: our uniquely human moral agency is expressed through reverent kinship with the living world.</p>
-        <p>The ecological crisis is not only technical—it is ethical. When our stories honor the more-than-human world, our choices follow: what we build, how we consume, and who thrives from it. Harmony is ethics in action.</p>
+        <p>
+          Dominion treats land, water, other species, and often other people chiefly as resources for a human plan. Harmony does not mean that every need aligns or that nature is always gentle. It asks for a more honest account of relationship: human life depends on systems we influence but do not control.
+        </p>
+        <p>
+          This is not a proposal to give a river a mystical voice or pretend that a forest can consent like a person. It is a decision-making prompt. Who understands this place? What lives here? What limits are observable? Who receives the benefit, who carries the cost, and what remains after us?
+        </p>
+        <p>
+          Earthsong began asking these questions while imagining governance for a possible sustainable village. They are just as useful at the scale of one household, one purchase, or one afternoon outside.
+        </p>
       </div>
     </div>
   </section>
@@ -98,8 +106,8 @@ const faqs = [
   <section id="principles" class="scroll-mt-24 bg-chalk">
     <div class="mx-auto max-w-6xl px-5 py-16 sm:px-6 md:py-24 lg:px-8">
       <div class="border-b border-ink/15 pb-6">
-        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">Four commitments</p>
-        <h2 class="mt-3 font-display text-5xl uppercase tracking-[0.05em] text-ink">The principles</h2>
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">Four useful lenses</p>
+        <h2 class="mt-3 font-display text-5xl uppercase tracking-[0.05em] text-ink">Questions before rules</h2>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-4">
         {principles.map((principle) => (
@@ -113,11 +121,19 @@ const faqs = [
     </div>
   </section>
 
-  <section class="bg-moss/5">
-    <div class="mx-auto max-w-6xl px-5 py-12 sm:px-6 md:py-16 lg:px-8">
-      <div class="grid gap-6 rounded-lg border border-moss/20 bg-white/60 p-6 shadow-field md:grid-cols-[220px_1fr] md:p-8">
-        <h2 class="font-display text-3xl uppercase leading-none tracking-[0.05em] text-moss">Ancient texts,<br />modern readings</h2>
-        <p class="font-body text-sm leading-[1.8] text-stone">Earthsong draws inspiration from long-standing teachings on caretaking—Sabbath for the land, tending gardens, gleaning, and mercy for creatures. We make no claim these sources were written as modern policy; we choose to read them today as a life-giving ethic for the world we share.</p>
+  <section class="bg-ink text-chalk">
+    <div class="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-6 md:grid-cols-[.8fr_1.2fr] md:py-20 lg:px-8">
+      <div>
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-light">A boundary worth keeping</p>
+        <h2 class="mt-3 font-display text-5xl uppercase leading-none tracking-[0.05em]">No doctrine required</h2>
+      </div>
+      <div class="space-y-4 font-body text-base leading-[1.8] text-mist/75">
+        <p>
+          Harmony is a working hypothesis, not a program, pledge, faith, or membership test. No one needs Earthsong language to care well for a place, and symbolic action should not be confused with measurable improvement.
+        </p>
+        <p>
+          The idea earns its keep only when it helps someone learn more accurately, choose more carefully, or repair something that matters. When better evidence or experience appears, the idea should change.
+        </p>
       </div>
     </div>
   </section>
@@ -125,9 +141,9 @@ const faqs = [
   <section id="practice" class="scroll-mt-24 bg-chalk">
     <div class="mx-auto max-w-6xl px-5 py-16 sm:px-6 md:py-24 lg:px-8">
       <div class="max-w-3xl">
-        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">Turn belief into practice</p>
-        <h2 class="mt-3 font-display text-5xl uppercase tracking-[0.05em] text-ink">The practice framework</h2>
-        <p class="mt-4 font-body text-base leading-relaxed text-stone">Four overlapping forms of participation keep reflection connected to the places and people it is meant to serve.</p>
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">At an individual scale</p>
+        <h2 class="mt-3 font-display text-5xl uppercase tracking-[0.05em] text-ink sm:text-6xl">Four places to begin</h2>
+        <p class="mt-4 font-body text-base leading-relaxed text-stone">These are possibilities, not assignments. One attentive, repeatable action is more useful than a dramatic promise that disappears.</p>
       </div>
       <div class="mt-10 grid gap-px overflow-hidden rounded-lg bg-ink/15 md:grid-cols-2">
         {practices.map((practice) => (
@@ -136,73 +152,42 @@ const faqs = [
               <h3 class="font-display text-4xl uppercase tracking-[0.05em] text-ink">{practice.title}</h3>
               <span class="font-mono text-[9px] font-bold tracking-[0.13em] text-ember-dark">{practice.num}</span>
             </div>
-            <ul class="mt-5 space-y-3">
-              {practice.items.map((item) => (
-                <li class="grid grid-cols-[10px_1fr] gap-3 font-body text-sm leading-relaxed text-stone">
-                  <span aria-hidden="true" class="mt-2 h-1.5 w-1.5 rounded-full bg-ember"></span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+            <p class="mt-5 font-body text-sm leading-[1.8] text-stone">{practice.body}</p>
           </article>
         ))}
       </div>
     </div>
   </section>
 
-  <section id="goals" class="scroll-mt-24 bg-ink text-chalk">
-    <div class="mx-auto max-w-6xl px-5 py-16 sm:px-6 md:py-24 lg:px-8">
-      <div class="grid gap-5 md:grid-cols-[1fr_1.3fr] md:items-end">
-        <div>
-          <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-light">One shared year</p>
-          <h2 class="mt-3 font-display text-5xl uppercase leading-none tracking-[0.05em]">12-month goals</h2>
-        </div>
-        <p class="font-body text-sm leading-relaxed text-mist/65">An ethic becomes credible when the work can be seen, counted, learned from, and improved.</p>
+  <section id="seasonal-check-in" class="scroll-mt-24 texture-paper border-t border-ink/10">
+    <div class="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-6 lg:grid-cols-[.7fr_1.3fr] lg:px-8 lg:py-24">
+      <div>
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">A rhythm for revision</p>
+        <h2 class="mt-3 font-display text-5xl uppercase tracking-[0.05em] text-ink sm:text-6xl">Check in with the season</h2>
+        <p class="mt-4 font-body text-sm leading-relaxed text-stone">Solstices and equinoxes offer four memorable moments each year to notice what changed and adjust what comes next.</p>
       </div>
-      <div class="mt-10 grid gap-px bg-mist/15 sm:grid-cols-2 lg:grid-cols-4">
-        {goals.map((goal) => (
-          <div class="bg-ink p-6 sm:p-8">
-            <div class="font-display text-6xl tracking-[0.03em] text-ember">{goal.num}</div>
-            <div class="mt-2 font-mono text-[9px] uppercase tracking-[0.13em] text-mist/60">{goal.label}</div>
-          </div>
+      <ol class="border-t border-ink/15">
+        {questions.map((question, index) => (
+          <li class="grid grid-cols-[44px_1fr] gap-4 border-b border-ink/15 py-5">
+            <span class="font-mono text-[9px] font-bold tracking-[0.13em] text-ember-dark">0{index + 1}</span>
+            <span class="font-body text-base leading-relaxed text-ink">{question}</span>
+          </li>
         ))}
-      </div>
+      </ol>
     </div>
   </section>
 
-  <section id="start-here" class="scroll-mt-24 texture-paper">
-    <div class="mx-auto max-w-6xl px-5 py-16 sm:px-6 md:py-24 lg:px-8">
-      <div class="grid gap-12 lg:grid-cols-[.65fr_1.35fr]">
-        <div>
-          <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">Begin where you are</p>
-          <h2 class="mt-3 font-display text-5xl uppercase tracking-[0.05em] text-ink">Start here</h2>
-          <p class="mt-4 font-body text-sm leading-relaxed text-stone">Choose one action that can be repeated. Rhythm matters more than spectacle.</p>
-        </div>
-        <ol class="border-t border-ink/15">
-          {steps.map((step, index) => (
-            <li class="grid grid-cols-[44px_1fr] gap-4 border-b border-ink/15 py-5">
-              <span class="font-mono text-[9px] font-bold tracking-[0.13em] text-ember-dark">0{index + 1}</span>
-              <span class="font-body text-base leading-relaxed text-ink">{step}</span>
-            </li>
-          ))}
-        </ol>
+  <section class="border-t border-ink/10 bg-chalk">
+    <div class="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-16 sm:px-6 md:flex-row md:items-center md:justify-between md:py-20 lg:px-8">
+      <div class="max-w-2xl">
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-ember-dark">Continue the thought</p>
+        <h2 class="mt-3 font-display text-5xl uppercase leading-none tracking-[0.05em] text-ink">Observe, reflect, revise</h2>
+        <p class="mt-4 font-body text-base leading-relaxed text-stone">The Codex develops the philosophy; the letters connect it to particular thresholds in the turning year.</p>
       </div>
-    </div>
-  </section>
-
-  <section id="faq" class="scroll-mt-24 border-t border-ink/10 bg-chalk">
-    <div class="mx-auto max-w-6xl px-5 py-16 sm:px-6 md:py-24 lg:px-8">
-      <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">Common questions</p>
-      <h2 class="mt-3 font-display text-5xl uppercase tracking-[0.05em] text-ink">Open ground</h2>
-      <div class="mt-9 grid gap-px overflow-hidden rounded-lg bg-ink/15 md:grid-cols-3">
-        {faqs.map((item) => (
-          <article class="bg-white/65 p-6 sm:p-8">
-            <h3 class="font-display text-2xl uppercase tracking-[0.05em] text-ink">{item.q}</h3>
-            <p class="mt-4 font-body text-sm leading-[1.75] text-stone">{item.a}</p>
-          </article>
-        ))}
+      <div class="flex flex-col gap-3 sm:flex-row">
+        <a href="/codex" class="inline-flex min-h-12 items-center justify-center rounded-md bg-ember-dark px-6 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-chalk transition-colors hover:bg-ember-deep">Read the Codex</a>
+        <a href="/newsletter" class="inline-flex min-h-12 items-center justify-center rounded-md border border-ink/25 px-6 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-ink transition-colors hover:border-ember-dark hover:text-ember-dark">Read the letters</a>
       </div>
-      <p class="mt-8 max-w-3xl font-body text-xs italic leading-relaxed text-stone">This page keeps advanced or esoteric practices private by default. Deeper materials are shared only with context and consent.</p>
     </div>
   </section>
 </Layout>

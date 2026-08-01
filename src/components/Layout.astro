@@ -4,7 +4,7 @@ import "@/styles/global.css";
 
 const {
   title = "Earthsong",
-  description = "A living philosophy of nature, spirit, and community.",
+  description = "A living thought experiment about nature, community, and possibility.",
   image = "/og.png",
   fullWidth = false,
 } = Astro.props;
@@ -15,10 +15,10 @@ const canonical = new URL(currentPath, Astro.site ?? Astro.url.origin);
 const socialImage = image ? new URL(image, Astro.site ?? Astro.url.origin) : null;
 const navLinks = [
   { href: "/codex", label: "Codex" },
-  { href: "/calendar", label: "Cycles" },
-  { href: "/elders", label: "Elders" },
+  { href: "/calendar", label: "Sky & Season" },
   { href: "/newsletter", label: "Letters" },
-  { href: "/from-dominion-to-harmony", label: "Stewardship" },
+  { href: "/from-dominion-to-harmony", label: "Harmony" },
+  { href: "/about", label: "About" },
 ];
 ---
 <!doctype html>
@@ -141,14 +141,14 @@ const navLinks = [
             <span class="font-display text-4xl uppercase tracking-[0.1em]">Earthsong</span>
           </a>
           <p class="mt-4 max-w-sm font-body text-sm leading-relaxed text-mist/70">
-            A living philosophy for walking gently, listening deeply, and remembering our place within the living world.
+            A living thought experiment about how people might relate more carefully to nature, community, and one another.
           </p>
         </div>
 
         <div>
           <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-light">Explore</p>
           <nav aria-label="Footer navigation" class="mt-4 grid gap-2">
-            {navLinks.slice(0, 4).map((link) => (
+            {navLinks.map((link) => (
               <a href={link.href} class="w-fit text-sm text-mist/75 transition-colors hover:text-chalk">
                 {link.label}
               </a>
@@ -169,7 +169,7 @@ const navLinks = [
       <div class="border-t border-mist/10">
         <div class="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 font-mono text-[10px] uppercase tracking-[0.16em] text-mist/65 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <span>Walk gently. © {new Date().getFullYear()} Earthsong.</span>
-          <span>Nature · Spirit · Community</span>
+          <span>Nature · Community · Possibility</span>
         </div>
       </div>
     </footer>

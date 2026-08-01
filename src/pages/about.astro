@@ -1,0 +1,125 @@
+---
+import Layout from '@/components/Layout.astro';
+
+const principles = [
+  {
+    num: '01',
+    title: 'Earnest about nature',
+    body: 'The ecological questions are real. We want to protect the living world and model the best care we know how to offer.',
+  },
+  {
+    num: '02',
+    title: 'Light about ourselves',
+    body: 'Earthsong is an experiment among friends, not a claim to special wisdom. Curiosity and humor belong here.',
+  },
+  {
+    num: '03',
+    title: 'Facts held firmly',
+    body: 'Scientific claims should be sourced and corrected when evidence changes. Observation comes before interpretation.',
+  },
+  {
+    num: '04',
+    title: 'Metaphors held lightly',
+    body: 'Stories and symbols can help us think, but they are not universal truths, supernatural instructions, or borrowed authority.',
+  },
+];
+---
+
+<Layout
+  title="About Earthsong — An Experiment Among Friends"
+  description="How Earthsong grew from TAG, Shangralachia, early language-model experiments, and a practical question about nature-minded governance."
+  fullWidth
+>
+  <section class="relative overflow-hidden bg-forest text-chalk">
+    <div class="absolute inset-0 bg-[url('/leaf-texture.jpg')] bg-cover bg-center opacity-10"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink/75 via-forest/80 to-forest/35"></div>
+    <div class="pointer-events-none absolute -right-24 -top-28 h-[30rem] w-[30rem] rounded-full border border-mist/10"></div>
+    <div class="pointer-events-none absolute right-10 top-10 h-64 w-64 rounded-full border border-ember/25"></div>
+
+    <div class="relative mx-auto max-w-6xl px-5 py-20 sm:px-6 md:py-28 lg:px-8">
+      <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.24em] text-ember-light">The story behind the experiment</p>
+      <h1 class="mt-5 max-w-5xl font-display text-[clamp(4.5rem,13vw,9rem)] uppercase leading-[0.82] tracking-[0.055em]">
+        About<br /> Earthsong
+      </h1>
+      <p class="mt-7 max-w-3xl font-body text-xl italic leading-relaxed text-mist/85 md:text-2xl">
+        Earnest about nature. Light about ourselves.
+      </p>
+    </div>
+  </section>
+
+  <section class="border-b border-ink/10 bg-chalk">
+    <div class="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-6 md:grid-cols-[.7fr_1.3fr] md:py-24 lg:px-8">
+      <div>
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">How it began</p>
+        <h2 class="mt-3 font-display text-5xl uppercase leading-[0.94] tracking-[0.05em] text-ink sm:text-6xl">A village idea raised a governance question.</h2>
+      </div>
+      <div class="space-y-5 font-body text-base leading-[1.85] text-stone md:text-lg">
+        <p>
+          A few years ago, during early experiments with language models, one member of The Adventure Group—TAG, a group of friends who go on adventures—started imagining <a href="https://shangralachia.com" class="text-ember-dark underline decoration-ember-dark/30 underline-offset-4 transition-colors hover:text-ember-deep">Shangralachia</a>: a possible eco-friendly, sustainable village to build together someday.
+        </p>
+        <p>
+          Planned communities need ways to make decisions, resolve conflict, and protect their purpose. Many durable examples seemed to depend on a central religion or a powerful central figure. Neither felt right for a playful project among friends. Earthsong emerged as a different kind of exploration: could a shared regard for nature help shape governance without becoming doctrine?
+        </p>
+        <p>
+          Research into nature-based religions and older philosophies widened the inquiry. It also revealed histories of suppression, appropriation, and overconfident retelling. Earthsong has changed as a result. Its public language now distinguishes evidence from metaphor, credits sources, and avoids presenting invented stories as inherited wisdom.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-chalk">
+    <div class="mx-auto max-w-6xl px-5 py-16 sm:px-6 md:py-24 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">What it is now</p>
+        <h2 class="mt-3 font-display text-5xl uppercase tracking-[0.05em] text-ink sm:text-6xl">A public notebook, still in pencil.</h2>
+        <p class="mt-5 font-body text-base leading-[1.85] text-stone md:text-lg">
+          Earthsong is a thought experiment and a technology-tools experiment. It is a place to learn about natural cycles, test ideas about care and governance, write seasonal letters, and see whether a useful philosophy can become clearer through revision. It is not an active religion, a public organization, or a finished plan.
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4">
+        {principles.map((principle) => (
+          <article class="border-b border-ink/15 py-8 md:border-r md:px-6 md:first:pl-0 lg:border-b-0 lg:last:border-r-0 lg:last:pr-0">
+            <span class="font-mono text-[9px] font-bold tracking-[0.13em] text-ember-dark">{principle.num}</span>
+            <h3 class="mt-6 font-display text-3xl uppercase tracking-[0.05em] text-ink">{principle.title}</h3>
+            <p class="mt-3 font-body text-sm leading-[1.75] text-stone">{principle.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-ink text-chalk">
+    <div class="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-6 md:grid-cols-2 md:py-24 lg:px-8">
+      <div>
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-light">Companion experiments</p>
+        <h2 class="mt-3 font-display text-5xl uppercase leading-none tracking-[0.05em]">Two sites, two roles</h2>
+      </div>
+      <div class="space-y-5 font-body text-base leading-[1.85] text-mist/75">
+        <p>
+          Earthsong is the public-facing place for the philosophy, sky calendar, and seasonal letters. Shangralachia is the companion planning space for TAG, with the village ideas and plans the friends enjoy working on together.
+        </p>
+        <p>
+          Shangralachia is private to TAG. Earthsong can be read on its own, and nothing here asks a visitor to join, believe, or wait for a village to be built. If a reader learns something interesting, does something mindful, and carries forward something positive, the experiment has already been worthwhile.
+        </p>
+        <a href="https://shangralachia.com" class="inline-flex items-center border-b border-ember/60 pb-1 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-ember-light transition-colors hover:border-ember-light hover:text-chalk">
+          Visit the Shangralachia entrance <span aria-hidden="true" class="ml-3">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="texture-paper">
+    <div class="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-16 sm:px-6 md:flex-row md:items-center md:justify-between md:py-20 lg:px-8">
+      <div class="max-w-2xl">
+        <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-ember-dark">Where to begin</p>
+        <h2 class="mt-3 font-display text-5xl uppercase leading-none tracking-[0.05em] text-ink">Read it as an experiment</h2>
+        <p class="mt-4 font-body text-base leading-relaxed text-stone">Start with the Codex for the current thinking, or a seasonal letter for one idea you can take into ordinary life.</p>
+      </div>
+      <div class="flex flex-col gap-3 sm:flex-row">
+        <a href="/codex" class="inline-flex min-h-12 items-center justify-center rounded-md bg-ember-dark px-6 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-chalk transition-colors hover:bg-ember-deep">Read the Codex</a>
+        <a href="/newsletter" class="inline-flex min-h-12 items-center justify-center rounded-md border border-ink/25 px-6 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-ink transition-colors hover:border-ember-dark hover:text-ember-dark">Read the letters</a>
+      </div>
+    </div>
+  </section>
+</Layout>

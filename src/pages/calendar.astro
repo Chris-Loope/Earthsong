@@ -6,19 +6,23 @@ import EventList from "@/components/EventList.astro";
 const icsUrl = "/earthsong.ics";
 ---
 
-<Layout title="Sacred Cycles — Earthsong" description="Track lunar phases, solstices, equinoxes, and eclipses with the Earthsong sacred cycles calendar.">
+<Layout title="Sky & Season — Earthsong" description="Track lunar phases, solstices, equinoxes, and eclipses in UTC with the Earthsong field calendar.">
   <PageHeader
     eyebrow="Moon · Sun · Season"
-    title="Sacred Cycles"
-    description="A field calendar for lunar phases, solstices, equinoxes, and eclipses from 2025 through 2030. Follow the sky without leaving the rhythm of ordinary life."
+    title="Sky & Season"
+    description="A field calendar for lunar phases, solstices, equinoxes, and eclipses from 2025 through 2030. Observe the sky, check the evidence, and notice the rhythm of ordinary life."
   />
+
+  <p class="mt-6 max-w-3xl font-mono text-[9px] uppercase leading-relaxed tracking-[0.1em] text-stone">
+    Times are listed in UTC; calendar apps convert them to local time. Eclipses are shown at their global peak moments, and visibility depends on location.
+  </p>
 
   <section class="my-10 overflow-hidden rounded-lg bg-forest p-6 text-chalk shadow-field sm:p-8">
     <div class="grid gap-7 md:grid-cols-[1fr_auto] md:items-center">
       <div>
         <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-light">Carry the calendar</p>
         <h2 class="mt-3 font-display text-4xl uppercase tracking-[0.05em]">Keep the turning year close</h2>
-        <p class="mt-3 max-w-2xl font-body text-sm leading-relaxed text-mist/75">Add Earthsong’s celestial events to your calendar once, then let each threshold find you.</p>
+        <p class="mt-3 max-w-2xl font-body text-sm leading-relaxed text-mist/75">Add the celestial events to your calendar once, then use them as prompts to look up and notice what is actually visible from where you are.</p>
       </div>
       <div class="flex flex-col gap-3 sm:flex-row md:flex-col lg:flex-row">
         <a class="inline-flex min-h-12 items-center justify-center rounded-md bg-ember-dark px-5 font-mono text-[10px] font-bold uppercase tracking-[0.13em] text-chalk transition-colors hover:bg-ember-deep" href={icsUrl}>Download .ics</a>

@@ -42,7 +42,7 @@
     ]
   },
   {
-    "title": "Vernal Equinox",
+    "title": "March Equinox",
     "start": "2025-03-20T09:01:26.759Z",
     "tags": [
       "season"
@@ -98,7 +98,7 @@
     ]
   },
   {
-    "title": "Summer Solstice",
+    "title": "June Solstice",
     "start": "2025-06-21T02:42:17.883Z",
     "tags": [
       "season"
@@ -168,7 +168,7 @@
     ]
   },
   {
-    "title": "Autumnal Equinox",
+    "title": "September Equinox",
     "start": "2025-09-22T18:19:34.559Z",
     "tags": [
       "season"
@@ -217,7 +217,7 @@
     ]
   },
   {
-    "title": "Winter Solstice",
+    "title": "December Solstice",
     "start": "2025-12-21T15:03:03.907Z",
     "tags": [
       "season"
@@ -280,7 +280,7 @@
     ]
   },
   {
-    "title": "Vernal Equinox",
+    "title": "March Equinox",
     "start": "2026-03-20T14:45:36.044Z",
     "tags": [
       "season"
@@ -329,7 +329,7 @@
     ]
   },
   {
-    "title": "Summer Solstice",
+    "title": "June Solstice",
     "start": "2026-06-21T08:25:00.316Z",
     "tags": [
       "season"
@@ -392,7 +392,7 @@
     ]
   },
   {
-    "title": "Autumnal Equinox",
+    "title": "September Equinox",
     "start": "2026-09-23T00:05:38.617Z",
     "tags": [
       "season"
@@ -441,7 +441,7 @@
     ]
   },
   {
-    "title": "Winter Solstice",
+    "title": "December Solstice",
     "start": "2026-12-21T20:50:22.187Z",
     "tags": [
       "season"
@@ -504,7 +504,7 @@
     ]
   },
   {
-    "title": "Vernal Equinox",
+    "title": "March Equinox",
     "start": "2027-03-20T20:24:43.453Z",
     "tags": [
       "season"
@@ -560,7 +560,7 @@
     ]
   },
   {
-    "title": "Summer Solstice",
+    "title": "June Solstice",
     "start": "2027-06-21T14:10:33.792Z",
     "tags": [
       "season"
@@ -630,7 +630,7 @@
     ]
   },
   {
-    "title": "Autumnal Equinox",
+    "title": "September Equinox",
     "start": "2027-09-23T06:01:18.345Z",
     "tags": [
       "season"
@@ -679,7 +679,7 @@
     ]
   },
   {
-    "title": "Winter Solstice",
+    "title": "December Solstice",
     "start": "2027-12-22T02:42:18.622Z",
     "tags": [
       "season"
@@ -742,7 +742,7 @@
     ]
   },
   {
-    "title": "Vernal Equinox",
+    "title": "March Equinox",
     "start": "2028-03-20T02:17:01.018Z",
     "tags": [
       "season"
@@ -791,7 +791,7 @@
     ]
   },
   {
-    "title": "Summer Solstice",
+    "title": "June Solstice",
     "start": "2028-06-20T20:01:42.742Z",
     "tags": [
       "season"
@@ -861,7 +861,7 @@
     ]
   },
   {
-    "title": "Autumnal Equinox",
+    "title": "September Equinox",
     "start": "2028-09-22T11:45:24.683Z",
     "tags": [
       "season"
@@ -910,7 +910,7 @@
     ]
   },
   {
-    "title": "Winter Solstice",
+    "title": "December Solstice",
     "start": "2028-12-21T08:20:05.734Z",
     "tags": [
       "season"
@@ -973,7 +973,7 @@
     ]
   },
   {
-    "title": "Vernal Equinox",
+    "title": "March Equinox",
     "start": "2029-03-20T08:01:40.100Z",
     "tags": [
       "season"
@@ -1029,7 +1029,7 @@
     ]
   },
   {
-    "title": "Summer Solstice",
+    "title": "June Solstice",
     "start": "2029-06-21T01:48:17.389Z",
     "tags": [
       "season"
@@ -1099,7 +1099,7 @@
     ]
   },
   {
-    "title": "Autumnal Equinox",
+    "title": "September Equinox",
     "start": "2029-09-22T17:37:49.811Z",
     "tags": [
       "season"
@@ -1162,7 +1162,7 @@
     ]
   },
   {
-    "title": "Winter Solstice",
+    "title": "December Solstice",
     "start": "2029-12-21T14:14:10.210Z",
     "tags": [
       "season"
@@ -1211,7 +1211,7 @@
     ]
   },
   {
-    "title": "Vernal Equinox",
+    "title": "March Equinox",
     "start": "2030-03-20T13:51:42.425Z",
     "tags": [
       "season"
@@ -1274,7 +1274,7 @@
     ]
   },
   {
-    "title": "Summer Solstice",
+    "title": "June Solstice",
     "start": "2030-06-21T07:31:13.263Z",
     "tags": [
       "season"
@@ -1323,7 +1323,7 @@
     ]
   },
   {
-    "title": "Autumnal Equinox",
+    "title": "September Equinox",
     "start": "2030-09-22T23:27:13.152Z",
     "tags": [
       "season"
@@ -1386,7 +1386,7 @@
     ]
   },
   {
-    "title": "Winter Solstice",
+    "title": "December Solstice",
     "start": "2030-12-21T20:09:35.689Z",
     "tags": [
       "season"

@@ -2,7 +2,7 @@
 import events from '../../data/cycle.json';
 
 const sorted = [...events].sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
-const years = [...new Set(sorted.map((event) => new Date(event.start).getFullYear()))].sort();
+const years = [...new Set(sorted.map((event) => new Date(event.start).getUTCFullYear()))].sort();
 const tags = [...new Set(sorted.flatMap((event) => event.tags || []))].sort();
 const currentYear = new Date().getFullYear();
 const defaultYear = years.includes(currentYear) ? currentYear : years[0];
@@ -71,15 +71,15 @@ const tagLabels: Record<string, string> = {
       return (
         <li
           class="event-item grid gap-4 py-5 sm:grid-cols-[90px_1fr] sm:items-center"
-          data-year={date.getFullYear()}
+          data-year={date.getUTCFullYear()}
           data-tags={(event.tags || []).join(',')}
         >
           <time datetime={event.start} class="flex items-baseline gap-2 sm:block">
             <span class="font-display text-3xl uppercase leading-none tracking-[0.04em] text-ink">
-              {date.toLocaleDateString('en-US', { month: 'short' })}
+              {date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}
             </span>
             <span class="font-display text-3xl leading-none tracking-[0.04em] text-ember-dark sm:ml-2">
-              {date.toLocaleDateString('en-US', { day: '2-digit' })}
+              {date.toLocaleDateString('en-US', { day: '2-digit', timeZone: 'UTC' })}
             </span>
           </time>
           <div>
@@ -102,7 +102,8 @@ const tagLabels: Record<string, string> = {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
-                ...(event.start.includes('T') ? { hour: '2-digit', minute: '2-digit' } : {}),
+                timeZone: 'UTC',
+                ...(event.start.includes('T') ? { hour: '2-digit', minute: '2-digit', timeZoneName: 'short' } : {}),
               })}
             </p>
           </div>
@@ -116,11 +117,11 @@ const tagLabels: Record<string, string> = {
   let activeYear = defaultYear;
   let activeTag = 'all';
 
-  const yearButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.year-tab'));
-  const tagButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.tag-chip'));
+  const yearButtons = Array.from(document.querySelectorAll('.year-tab'));
+  const tagButtons = Array.from(document.querySelectorAll('.tag-chip'));
 
   function filterEvents() {
-    const items = document.querySelectorAll<HTMLElement>('.event-item');
+    const items = document.querySelectorAll('.event-item');
     let count = 0;
 
     items.forEach((item) => {
@@ -135,7 +136,7 @@ const tagLabels: Record<string, string> = {
     if (countElement) countElement.textContent = `${count} ${count === 1 ? 'event' : 'events'} in view`;
   }
 
-  function setYearButton(button: HTMLButtonElement, selected: boolean) {
+  function setYearButton(button, selected) {
     button.setAttribute('aria-pressed', String(selected));
     button.classList.toggle('border-moss', selected);
     button.classList.toggle('bg-moss', selected);
@@ -144,7 +145,7 @@ const tagLabels: Record<string, string> = {
     button.classList.toggle('text-stone', !selected);
   }
 
-  function setTagButton(button: HTMLButtonElement, selected: boolean) {
+  function setTagButton(button, selected) {
     button.setAttribute('aria-pressed', String(selected));
     button.classList.toggle('border-ember-dark', selected);
     button.classList.toggle('bg-ember-dark', selected);

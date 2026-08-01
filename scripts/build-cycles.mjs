@@ -13,10 +13,10 @@ const toIso = (d) => d.toISOString();
 function seasonEvents(year) {
   const s = A.Seasons(year); // fields are AstroTime
   return [
-    { title: 'Vernal Equinox',   time: s.mar_equinox.date },
-    { title: 'Summer Solstice',  time: s.jun_solstice.date },
-    { title: 'Autumnal Equinox', time: s.sep_equinox.date },
-    { title: 'Winter Solstice',  time: s.dec_solstice.date }
+    { title: 'March Equinox',     time: s.mar_equinox.date },
+    { title: 'June Solstice',     time: s.jun_solstice.date },
+    { title: 'September Equinox', time: s.sep_equinox.date },
+    { title: 'December Solstice', time: s.dec_solstice.date }
   ];
 }
 

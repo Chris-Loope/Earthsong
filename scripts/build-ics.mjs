@@ -24,9 +24,9 @@ function toIcsDate(v) {
 const lines = [
   "BEGIN:VCALENDAR",
   "VERSION:2.0",
-  "PRODID:-//earthsong.io//Earthsong Cycles//EN",
+  "PRODID:-//earthsong.io//Earthsong Sky and Season//EN",
   "CALSCALE:GREGORIAN",
-  "X-WR-CALNAME:Earthsong Sacred Cycles",
+  "X-WR-CALNAME:Earthsong - Sky & Season",
   "X-WR-TIMEZONE:UTC"
 ];
 
