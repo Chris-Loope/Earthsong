@@ -10,20 +10,20 @@ import Cycles from "@/content/codex/06-cycles.mdx";
 
 const chapters = [
   { id: "origin", num: "I", title: "The Origin Symphony" },
-  { id: "roots", num: "II", title: "The Ancient Roots" },
-  { id: "symbols", num: "III", title: "Symbols of the Sacred" },
-  { id: "spaces", num: "IV", title: "Sacred Spaces" },
-  { id: "compassion", num: "V", title: "The Path of Compassion" },
-  { id: "cycles", num: "VI", title: "Sacred Cycles" },
+  { id: "roots", num: "II", title: "Living Lineages" },
+  { id: "symbols", num: "III", title: "A Language of Symbols" },
+  { id: "spaces", num: "IV", title: "The Practice of Place" },
+  { id: "compassion", num: "V", title: "Compassion and Repair" },
+  { id: "cycles", num: "VI", title: "Observable Cycles" },
 ];
 ---
 
-<Layout title="The Earthsong Codex" description="Six chapters of Earth-based philosophy: origin, roots, symbols, sacred spaces, compassion, and cycles." fullWidth>
+<Layout title="The Earthsong Codex" description="Six chapters of Earth-based philosophy: origin, ethical learning, symbols, place, compassion, and observable cycles." fullWidth>
   <div class="mx-auto max-w-6xl px-5 py-12 sm:px-6 md:py-16 lg:px-8">
     <PageHeader
       eyebrow="The living text · Six public chapters"
       title="The Earthsong Codex"
-      description="A public telling of Earthsong’s foundations: the First Note, ancient roots, sacred symbols and spaces, compassion, and the cycles that return us to balance."
+      description="A public telling of Earthsong’s foundations: a creation metaphor, an ethic of learning, a language of symbols, accountable relationships with place, compassion, and the observable sky."
     />
 
     <div class="mt-12 grid gap-12 lg:grid-cols-[250px_minmax(0,1fr)] lg:items-start">
@@ -44,7 +44,7 @@ const chapters = [
         <p class="mt-5 font-body text-xs italic leading-relaxed text-stone-soft">Read in order, or enter wherever the path opens.</p>
       </aside>
 
-      <article class="prose prose-lg max-w-none prose-earthsong">
+      <article class="codex-prose prose prose-lg max-w-none prose-earthsong">
         <section id="origin" class="scroll-mt-28"><Origin /></section>
         <hr class="my-14" />
         <section id="roots" class="scroll-mt-28"><Roots /></section>
@@ -64,3 +64,25 @@ const chapters = [
     </div>
   </div>
 </Layout>
+
+<style>
+  .codex-prose :global(section > h2:first-child) {
+    margin-top: 0;
+    border-top: 0;
+    padding-top: 0;
+    font-size: clamp(2.75rem, 6vw, 4.75rem);
+    line-height: 0.95;
+  }
+
+  .codex-prose :global(section > h3) {
+    margin-top: 2.6em;
+    border-top: 1px solid rgba(15, 15, 13, 0.13);
+    padding-top: 1.2em;
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .codex-prose :global(section > h4) {
+    font-size: 1.45rem;
+  }
+</style>

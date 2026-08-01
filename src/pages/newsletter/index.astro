@@ -15,12 +15,16 @@ const sorted = Object.entries(issueModules)
   .sort((a, b) => b.date.getTime() - a.date.getTime());
 ---
 
-<Layout title="Seasonal Letters — Earthsong" description="Seasonal letters on nature, spirit, and community from Earthsong.">
+<Layout title="Seasonal Letters — Earthsong" description="Solstice and equinox letters connecting seasonal knowledge from the past with mindful action in the present and care for the future.">
   <PageHeader
     eyebrow="Published at the thresholds"
     title="Seasonal Letters"
-    description="Notes on nature, spirit, and community, published around the solstices and equinoxes and meant to be read slowly."
+    description="Each solstice and equinox, look back at what the turning has meant, notice what it means now, and carry one useful practice into what comes next."
   />
+
+  <p class="mt-6 max-w-3xl font-mono text-[9px] uppercase leading-relaxed tracking-[0.1em] text-stone">
+    Seasonal names follow Northern Hemisphere convention. The astronomical event is global; north and south experience opposite seasons.
+  </p>
 
   <div class="mt-10">
     <SubscribeForm />
