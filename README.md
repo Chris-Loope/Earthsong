@@ -1,12 +1,12 @@
 # Earthsong
 
-Earthsong is a public thought experiment about nature, community, and possibility. It grew from The Adventure Group's work on [Shangralachia](https://shangralachia.com), a private planning space for a possible sustainable village, and the question of how nature-minded governance might work without a central religion or figure.
+Earthsong is a public thought experiment about nature, community, and possibility. It explores how nature-minded governance might work without a central religion or figure, separating scientific claims from metaphor and revising its language as evidence and understanding change.
 
 The project is earnest about nature and light about itself. It is not an active religion, public membership organization, or finished governance system. Its stories and symbols are offered as creative tools; scientific claims are separated from metaphor and supported by sources.
 
 ## Public site
 
-- `/about` — the origin, relationship to TAG and Shangralachia, and working principles
+- `/about` — the project's origin, purpose, and working principles
 - `/privacy` — the site's data-minimization and hosting policy
 - `/accessibility` — the WCAG 2.2 Level AA target, audit scope, and barrier-reporting process
 - `/codex` — six chapters of the current Earthsong philosophy
@@ -44,7 +44,7 @@ The site does not store subscriber data. To connect a newsletter provider, copy 
 
 ## Visual system
 
-Earthsong shares a companion design language with Shangralachia:
+Earthsong's visual language uses:
 
 - Display: Bebas Neue
 - Body: Lora

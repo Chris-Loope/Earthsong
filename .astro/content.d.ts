@@ -181,6 +181,14 @@ declare module 'astro:content' {
   rendered?: RenderedContent;
   filePath?: string;
 }>;
+"elders": Record<string, {
+  id: string;
+  body?: string;
+  collection: "elders";
+  data: any;
+  rendered?: RenderedContent;
+  filePath?: string;
+}>;
 "newsletter": Record<string, {
   id: string;
   body?: string;
@@ -221,6 +229,6 @@ declare module 'astro:content' {
 		LiveContentConfig['collections'][C]['loader']
 	>;
 
-	export type ContentConfig = typeof import("../src/content.config.js");
+	export type ContentConfig = typeof import("../src/content.config.mjs");
 	export type LiveContentConfig = never;
 }
