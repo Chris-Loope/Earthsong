@@ -1,0 +1,49 @@
+{
+  "$ref": "#/definitions/newsletter",
+  "definitions": {
+    "newsletter": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "issue": {
+          "type": "number"
+        },
+        "date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "relatedEvent": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "issue",
+        "date",
+        "summary"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
