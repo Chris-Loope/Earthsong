@@ -13,6 +13,7 @@ The project is earnest about nature and light about itself. It is not an active 
 - `/calendar` — UTC lunar phases, solstices, equinoxes, and eclipses from 2025–2030
 - `/newsletter` — seasonal letters and field notes
 - `/from-dominion-to-harmony` — an individual-scale thought experiment about decision-making and care
+- `/disclaimer` — what Earthsong is and isn't: metaphor, cultural sourcing, symbols, cycles, and eclipse safety
 
 The old Guide and Elders routes redirect to relevant Codex material so existing links do not strand readers.
 
@@ -37,10 +38,6 @@ The build generates `public/earthsong.ics` before Astro copies the public files 
 ## Calendar data
 
 `scripts/build-cycles.mjs` uses `astronomy-engine` to create `data/cycle.json`. Event times and labels are hemisphere-neutral and displayed in UTC. Eclipse times are global peak moments; local visibility varies.
-
-## Newsletter delivery
-
-The site does not store subscriber data. To connect a newsletter provider, copy `.env.example` to `.env` and set `PUBLIC_NEWSLETTER_ACTION` to an external form endpoint. Without an endpoint, the form directs readers to the public letter archive and does not pretend a subscription was created.
 
 ## Visual system
 

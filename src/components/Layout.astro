@@ -1,5 +1,4 @@
 ---
-import SubscribeForm from "@/components/SubscribeForm.astro";
 import "@/styles/global.css";
 
 const {
@@ -162,7 +161,12 @@ const navLinks = [
             Seasonal knowledge, a mindful practice, and one positive thought to carry beyond each solstice and equinox.
           </p>
           <div class="mt-5 max-w-md">
-            <SubscribeForm compact />
+            <a
+              href="/newsletter"
+              class="inline-flex min-h-11 items-center rounded-md border border-mist/20 px-4 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-chalk transition-colors hover:border-ember-light hover:text-ember-light"
+            >
+              Read the seasonal letters →
+            </a>
           </div>
         </div>
       </div>
