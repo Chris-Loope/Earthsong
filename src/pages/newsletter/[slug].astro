@@ -1,6 +1,5 @@
 ---
 import Layout from "@/components/Layout.astro";
-import SubscribeForm from "@/components/SubscribeForm.astro";
 
 export async function getStaticPaths() {
   const issues = await import.meta.glob("../../content/newsletter/*.mdx", { eager: true }) as Record<string, any>;
@@ -70,7 +69,11 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
     ) : <span class="hidden bg-chalk sm:block" />}
   </nav>
 
-  <div class="mt-12">
-    <SubscribeForm />
+  <div class="mt-12 rounded-lg border border-moss/20 bg-white/65 p-6 shadow-field sm:p-8">
+    <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-ember-dark">Seasonal letters</p>
+    <h2 class="mt-3 font-display text-4xl uppercase tracking-[0.05em] text-ink">How to read them</h2>
+    <p class="mt-2 max-w-2xl font-body text-sm leading-relaxed text-stone">
+      Learn one interesting thing, try one mindful individual practice, and carry one useful idea into the season ahead.
+    </p>
   </div>
 </Layout>
