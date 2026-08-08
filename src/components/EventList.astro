@@ -1,8 +1,9 @@
 ---
 import events from '../../data/cycle.json';
+import { isMajorEvent, eventAnchorId, getEventCopy } from '@/lib/events';
 
 const sorted = [...events].sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
-const years = [...new Set(sorted.map((event) => new Date(event.start).getUTCFullYear()))].sort();
+const years = [...new Set(sorted.map((event) => new Date(event.start).getUTCFullYear()))].sort((a, b) => a - b);
 const tags = [...new Set(sorted.flatMap((event) => event.tags || []))].sort();
 const currentYear = new Date().getFullYear();
 const defaultYear = years.includes(currentYear) ? currentYear : years[0];
@@ -13,7 +14,39 @@ const tagLabels: Record<string, string> = {
   eclipse: 'Eclipse',
   season: 'Season',
 };
+
+// Calendar -> newsletter linking: map "YYYY-MM-DD" -> the letter that covers that day.
+const newsletterModules = import.meta.glob('../content/newsletter/*.mdx', { eager: true }) as Record<string, any>;
+const newsletterByDate = new Map<string, { slug: string; title: string }>();
+for (const [path, mod] of Object.entries(newsletterModules)) {
+  const related = mod.frontmatter?.relatedEvent;
+  if (related) {
+    newsletterByDate.set(related, {
+      slug: path.split('/').pop()!.replace(/\.mdx$/, ''),
+      title: mod.frontmatter.title,
+    });
+  }
+}
+
+const rows = sorted.map((event) => {
+  const date = new Date(event.start);
+  const major = isMajorEvent(event.tags);
+  const letter = major ? newsletterByDate.get(event.start.slice(0, 10)) : undefined;
+  return {
+    event,
+    date,
+    major,
+    letter,
+    copy: getEventCopy(event.title, event.tags),
+    anchorId: eventAnchorId(event.start),
+  };
+});
 ---
+
+<div id="next-up" class="hidden mb-6 rounded-lg border border-ember-dark/30 bg-ember-dark/5 p-5 sm:p-6">
+  <p class="font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-ember-dark">Next up</p>
+  <a id="next-up-link" href="#" class="mt-2 block font-display text-2xl uppercase tracking-[0.04em] text-ink transition-colors hover:text-ember-dark"></a>
+</div>
 
 <div class="rounded-lg border border-ink/15 bg-white/55 p-5 shadow-field sm:p-7">
   <div class="grid gap-6 border-b border-ink/10 pb-6 lg:grid-cols-[1fr_auto] lg:items-end">
@@ -66,50 +99,66 @@ const tagLabels: Record<string, string> = {
   <p class="mt-6 font-mono text-[10px] uppercase tracking-[0.15em] text-stone" id="event-count" aria-live="polite"></p>
 
   <ul class="mt-3 divide-y divide-ink/10" id="event-list">
-    {sorted.map((event) => {
-      const date = new Date(event.start);
-      return (
-        <li
-          class="event-item grid gap-4 py-5 sm:grid-cols-[90px_1fr] sm:items-center"
-          data-year={date.getUTCFullYear()}
-          data-tags={(event.tags || []).join(',')}
-        >
-          <time datetime={event.start} class="flex items-baseline gap-2 sm:block">
-            <span class="font-display text-3xl uppercase leading-none tracking-[0.04em] text-ink">
-              {date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}
-            </span>
-            <span class="font-display text-3xl leading-none tracking-[0.04em] text-ember-dark sm:ml-2">
-              {date.toLocaleDateString('en-US', { day: '2-digit', timeZone: 'UTC' })}
-            </span>
-          </time>
-          <div>
-            <div class="flex flex-wrap items-center gap-2">
-              <span class="font-body text-base font-semibold text-ink">{event.title}</span>
-              {(event.tags || []).map((tag) => (
-                <span class:list={[
-                  "inline-flex rounded-full px-2 py-1 font-mono text-[8px] font-bold uppercase tracking-[0.1em]",
-                  tag === 'eclipse' && "bg-ember/10 text-ember-dark",
-                  tag === 'full-moon' && "bg-water/10 text-water",
-                  tag === 'new-moon' && "bg-ink/5 text-ink/65",
-                  tag === 'season' && "bg-moss/10 text-moss",
-                ]}>
-                  {tagLabels[tag] || tag}
-                </span>
-              ))}
-            </div>
-            <p class="mt-1 font-mono text-[9px] uppercase tracking-[0.1em] text-stone">
-              {date.toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-                timeZone: 'UTC',
-                ...(event.start.includes('T') ? { hour: '2-digit', minute: '2-digit', timeZoneName: 'short' } : {}),
-              })}
-            </p>
+    {rows.map((row) => (
+      <li
+        id={row.anchorId}
+        class="event-item grid gap-4 py-5 sm:grid-cols-[90px_1fr] sm:items-center scroll-mt-24"
+        data-year={row.date.getUTCFullYear()}
+        data-tags={(row.event.tags || []).join(',')}
+        data-start={row.event.start}
+      >
+        <time datetime={row.event.start} class="flex items-baseline gap-2 sm:block">
+          <span class="font-display text-3xl uppercase leading-none tracking-[0.04em] text-ink">
+            {row.date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}
+          </span>
+          <span class="font-display text-3xl leading-none tracking-[0.04em] text-ember-dark sm:ml-2">
+            {row.date.toLocaleDateString('en-US', { day: '2-digit', timeZone: 'UTC' })}
+          </span>
+        </time>
+        <div>
+          <div class="flex flex-wrap items-center gap-2">
+            <span data-role="title" class="font-body text-base font-semibold text-ink">{row.event.title}</span>
+            {(row.event.tags || []).map((tag) => (
+              <span class:list={[
+                "inline-flex rounded-full px-2 py-1 font-mono text-[8px] font-bold uppercase tracking-[0.1em]",
+                tag === 'eclipse' && "bg-ember/10 text-ember-dark",
+                tag === 'full-moon' && "bg-water/10 text-water",
+                tag === 'new-moon' && "bg-ink/5 text-ink/65",
+                tag === 'season' && "bg-moss/10 text-moss",
+              ]}>
+                {tagLabels[tag] || tag}
+              </span>
+            ))}
           </div>
-        </li>
-      );
-    })}
+          <p data-role="date" class="mt-1 font-mono text-[9px] uppercase tracking-[0.1em] text-stone">
+            {row.date.toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+              timeZone: 'UTC',
+              ...(row.event.start.includes('T') ? { hour: '2-digit', minute: '2-digit', timeZoneName: 'short' } : {}),
+            })}
+          </p>
+          <details class="mt-3">
+            <summary class="cursor-pointer select-none font-mono text-[9px] font-bold uppercase tracking-[0.12em] text-ember-dark transition-colors hover:text-ember-deep">
+              What &amp; why
+            </summary>
+            <div class="mt-2 max-w-2xl space-y-2 font-body text-sm leading-relaxed text-stone">
+              <p><strong class="text-ink">What:</strong> {row.copy.what}</p>
+              <p><strong class="text-ink">Why:</strong> {row.copy.why}</p>
+              <p><strong class="text-ink">A thought:</strong> {row.copy.thought}</p>
+              {row.letter && (
+                <p>
+                  <a href={`/newsletter/${row.letter.slug}`} class="font-mono text-[9px] font-bold uppercase tracking-[0.12em] text-ember-dark transition-colors hover:text-ember-deep">
+                    Read the letter: {row.letter.title} →
+                  </a>
+                </p>
+              )}
+            </div>
+          </details>
+        </div>
+      </li>
+    ))}
   </ul>
 </div>
 
@@ -128,7 +177,7 @@ const tagLabels: Record<string, string> = {
       const itemYear = Number(item.dataset.year);
       const itemTags = item.dataset.tags ? item.dataset.tags.split(',') : [];
       const visible = itemYear === activeYear && (activeTag === 'all' || itemTags.includes(activeTag));
-      item.hidden = !visible;
+      item.classList.toggle('hidden', !visible);
       if (visible) count += 1;
     });
 
@@ -154,12 +203,14 @@ const tagLabels: Record<string, string> = {
     button.classList.toggle('text-stone', !selected);
   }
 
+  function selectYear(year) {
+    activeYear = year;
+    yearButtons.forEach((candidate) => setYearButton(candidate, Number(candidate.dataset.year) === year));
+    filterEvents();
+  }
+
   yearButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      activeYear = Number(button.dataset.year);
-      yearButtons.forEach((candidate) => setYearButton(candidate, candidate === button));
-      filterEvents();
-    });
+    button.addEventListener('click', () => selectYear(Number(button.dataset.year)));
   });
 
   tagButtons.forEach((button) => {
@@ -171,4 +222,55 @@ const tagLabels: Record<string, string> = {
   });
 
   filterEvents();
+
+  // Dim events that have already happened.
+  const now = new Date();
+  document.querySelectorAll('.event-item').forEach((item) => {
+    item.classList.toggle('opacity-50', new Date(item.dataset.start) < now);
+  });
+
+  // "Next up": find the first event at or after now, preferring a same-day major
+  // event (season/eclipse) immediately following it — solves the real case where a
+  // routine moon phase lands minutes before a major event on the same calendar day.
+  const allItems = Array.from(document.querySelectorAll('.event-item'));
+  const isMajorTags = (tagsAttr) => {
+    const t = tagsAttr ? tagsAttr.split(',') : [];
+    return t.includes('season') || t.includes('eclipse');
+  };
+
+  const baseIndex = allItems.findIndex((el) => new Date(el.dataset.start) >= now);
+  if (baseIndex !== -1) {
+    const base = allItems[baseIndex];
+    const next = allItems[baseIndex + 1];
+    let chosen = base;
+    if (
+      next &&
+      next.dataset.start.slice(0, 10) === base.dataset.start.slice(0, 10) &&
+      isMajorTags(next.dataset.tags) &&
+      !isMajorTags(base.dataset.tags)
+    ) {
+      chosen = next;
+    }
+
+    const card = document.getElementById('next-up');
+    const link = document.getElementById('next-up-link');
+    if (card && link) {
+      const title = chosen.querySelector('[data-role="title"]')?.textContent ?? '';
+      const dateText = chosen.querySelector('[data-role="date"]')?.textContent ?? '';
+      const daysUntil = Math.round((new Date(chosen.dataset.start).getTime() - now.getTime()) / 86400000);
+      const relative = daysUntil <= 0 ? 'today' : daysUntil === 1 ? 'tomorrow' : `in ${daysUntil} days`;
+      link.href = `#${chosen.id}`;
+      link.textContent = `${title} — ${dateText} (${relative})`;
+      card.classList.remove('hidden');
+    }
+
+    const chosenYear = Number(chosen.dataset.year);
+    if (chosenYear !== activeYear) {
+      selectYear(chosenYear);
+    }
+
+    chosen.classList.add('ring-2', 'ring-ember-dark', 'ring-offset-2', 'ring-offset-chalk');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    chosen.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+  }
 </script>

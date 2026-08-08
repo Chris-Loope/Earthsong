@@ -9,6 +9,7 @@
         "build": "node scripts/build-ics.mjs && astro build",
         "preview": "astro preview",
         "build:ics": "node scripts/build-ics.mjs",
+        "check:newsletters": "node scripts/check-newsletter-coverage.mjs",
         "format": "prettier -w ."
     },
     "dependencies": {

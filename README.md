@@ -39,6 +39,12 @@ The build generates `public/earthsong.ics` before Astro copies the public files 
 
 `scripts/build-cycles.mjs` uses `astronomy-engine` to create `data/cycle.json`. Event times and labels are hemisphere-neutral and displayed in UTC. Eclipse times are global peak moments; local visibility varies.
 
+Each event on `/calendar` has a short "what/why/a thought" note (`src/lib/events.ts`), derived at render time from its title — no changes to `cycle.json` are needed for this. Solstices, equinoxes, and every eclipse kind are "major" events; when a Seasonal Letter sets `relatedEvent: "YYYY-MM-DD"` in its frontmatter matching one, the calendar links to that letter and the letter links back to the calendar. Run `npm run check:newsletters` to see which major events don't have a matching letter yet.
+
+## Content authorship
+
+Seasonal Letters, and the per-event notes on `/calendar`, are researched and drafted with AI assistance rather than hand-written for each new occasion — see `/disclaimer#ai-assisted-content` for the public-facing disclosure.
+
 ## Visual system
 
 Earthsong's visual language uses:
