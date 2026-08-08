@@ -4,23 +4,16 @@
 // practice has a quick "what's next" signal instead of scanning the archive by hand.
 import fs from 'node:fs';
 import path from 'node:path';
+import { isMajorEvent, readNewsletterEventMap } from '../src/lib/events.mjs';
 
 const cyclePath = path.join('data', 'cycle.json');
 const newsletterDir = path.join('src', 'content', 'newsletter');
 
 const events = JSON.parse(fs.readFileSync(cyclePath, 'utf8'));
-const isMajor = (tags) => (tags || []).includes('season') || (tags || []).includes('eclipse');
-
-const files = fs.readdirSync(newsletterDir).filter((f) => f.endsWith('.mdx'));
-const covered = new Set();
-for (const file of files) {
-  const raw = fs.readFileSync(path.join(newsletterDir, file), 'utf8');
-  const match = raw.match(/^relatedEvent:\s*"?([\d-]+)"?\s*$/m);
-  if (match) covered.add(match[1]);
-}
+const covered = new Set(readNewsletterEventMap(fs, path, newsletterDir).keys());
 
 const now = new Date();
-const majorEvents = events.filter((e) => isMajor(e.tags));
+const majorEvents = events.filter((e) => isMajorEvent(e.tags));
 const missing = majorEvents.filter((e) => !covered.has(e.start.slice(0, 10)));
 const upcoming = missing.filter((e) => new Date(e.start) >= now);
 const past = missing.filter((e) => new Date(e.start) < now);

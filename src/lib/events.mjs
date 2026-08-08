@@ -1,17 +1,15 @@
-export interface CycleEvent {
-  title: string;
-  start: string;
-  tags: string[];
-}
+// Shared calendar/newsletter helpers, importable from both Astro components
+// (via the @/lib/events alias) and plain Node scripts (scripts/*.mjs) — kept
+// as plain JS specifically so scripts run with `node` directly can use it too.
 
-export interface EventCopy {
-  what: string;
-  why: string;
-  thought: string;
-}
+/**
+ * @typedef {{ title: string; start: string; tags: string[] }} CycleEvent
+ * @typedef {{ what: string; why: string; thought: string }} EventCopy
+ * @typedef {{ slug: string; title: string }} NewsletterRef
+ */
 
 /** Deterministic kind key from a cycle.json title, e.g. "Total Solar Eclipse" -> "total-solar-eclipse". */
-export function slugifyEventKind(title: string): string {
+export function slugifyEventKind(title) {
   return title
     .toLowerCase()
     .trim()
@@ -20,17 +18,17 @@ export function slugifyEventKind(title: string): string {
 }
 
 /** Solstices, equinoxes, and every eclipse kind are "major"; routine new/full moons are not. */
-export function isMajorEvent(tags: string[] = []): boolean {
+export function isMajorEvent(tags = []) {
   return tags.includes('season') || tags.includes('eclipse');
 }
 
 /** Stable anchor id shared between the calendar list and newsletter deep links. */
-export function eventAnchorId(start: string): string {
+export function eventAnchorId(start) {
   return `event-${start.replace(/[:.]/g, '-')}`;
 }
 
 /** One entry per possible cycle.json title. Reflective, not prescriptive — consistent with /disclaimer#cycles-not-fate. */
-export const EVENT_COPY: Record<string, EventCopy> = {
+export const EVENT_COPY = {
   'march-equinox': {
     what: "The Sun crosses Earth's equatorial plane heading north, and day and night come close to equal length worldwide.",
     why: "Earth's axis stays tilted about 23.4° as it orbits the Sun; twice a year that tilt favors neither hemisphere, so sunlight briefly divides close to evenly.",
@@ -47,7 +45,7 @@ export const EVENT_COPY: Record<string, EventCopy> = {
     thought: 'A second yearly hinge — a fair point to compare what has changed since the last one.',
   },
   'december-solstice': {
-    what: "The Sun reaches its most southerly position: the shortest daylight of the year in the Northern Hemisphere, the longest in the Southern.",
+    what: 'The Sun reaches its most southerly position: the shortest daylight of the year in the Northern Hemisphere, the longest in the Southern.',
     why: 'The Northern Hemisphere is tilted furthest from the Sun at this point in the orbit.',
     thought: 'The turn back toward more light starts here, even before it is easy to notice.',
   },
@@ -67,7 +65,7 @@ export const EVENT_COPY: Record<string, EventCopy> = {
     thought: 'Never view any part of a solar eclipse without certified solar filters — see the site disclaimer for exact eye-safety guidance.',
   },
   'annular-solar-eclipse': {
-    what: "The Moon crosses directly in front of the Sun but looks too small to fully cover it, leaving a bright ring visible around the edge.",
+    what: 'The Moon crosses directly in front of the Sun but looks too small to fully cover it, leaving a bright ring visible around the edge.',
     why: 'The Moon is near the far point of its slightly elliptical orbit, so it appears smaller than the Sun from Earth.',
     thought: 'There is no unfiltered-safe moment in an annular eclipse — certified solar filters are required throughout. See the site disclaimer for exact guidance.',
   },
@@ -98,7 +96,7 @@ export const EVENT_COPY: Record<string, EventCopy> = {
   },
 };
 
-const FALLBACK_BY_TAG: Record<string, EventCopy> = {
+const FALLBACK_BY_TAG = {
   season: {
     what: "An equinox or solstice marking the Sun's position relative to Earth's tilted axis.",
     why: 'A fixed astronomical checkpoint in Earth’s yearly orbit.',
@@ -112,9 +110,31 @@ const FALLBACK_BY_TAG: Record<string, EventCopy> = {
 };
 
 /** Looks up copy by exact title first, then falls back to a generic per-tag blurb so nothing ever renders blank. */
-export function getEventCopy(title: string, tags: string[] = []): EventCopy {
+export function getEventCopy(title, tags = []) {
   const kind = slugifyEventKind(title);
   if (EVENT_COPY[kind]) return EVENT_COPY[kind];
   const tag = tags.find((t) => FALLBACK_BY_TAG[t]);
   return tag ? FALLBACK_BY_TAG[tag] : FALLBACK_BY_TAG.season;
+}
+
+/**
+ * Node-only helper (fs-based, for plain scripts that can't use import.meta.glob):
+ * reads every newsletter .mdx file's `relatedEvent`/`title` frontmatter fields via
+ * a lightweight regex extraction and returns a Map<"YYYY-MM-DD", {slug, title}>.
+ * Astro pages should keep using import.meta.glob instead — it parses frontmatter
+ * properly rather than by regex, and this helper exists only because plain Node
+ * scripts (build-ics.mjs, check-newsletter-coverage.mjs) have no Vite context.
+ */
+export function readNewsletterEventMap(fs, path, newsletterDir) {
+  const map = new Map();
+  const files = fs.readdirSync(newsletterDir).filter((f) => f.endsWith('.mdx'));
+  for (const file of files) {
+    const raw = fs.readFileSync(path.join(newsletterDir, file), 'utf8');
+    const relatedMatch = raw.match(/^relatedEvent:\s*"?([\d-]+)"?\s*$/m);
+    const titleMatch = raw.match(/^title:\s*"(.*)"\s*$/m);
+    if (relatedMatch && titleMatch) {
+      map.set(relatedMatch[1], { slug: file.replace(/\.mdx$/, ''), title: titleMatch[1] });
+    }
+  }
+  return map;
 }

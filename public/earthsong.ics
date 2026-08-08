@@ -10,6 +10,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20250113T222732Z
 DTEND:20250113T232732Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-01-29t12-36-33-845z@earthsong.io
@@ -17,6 +18,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20250129T123633Z
 DTEND:20250129T133633Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2025-02-12t13-54-03-015z@earthsong.io
@@ -24,6 +26,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20250212T135403Z
 DTEND:20250212T145403Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-02-28t00-45-22-920z@earthsong.io
@@ -31,6 +34,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20250228T004522Z
 DTEND:20250228T014522Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2025-03-14t06-55-19-672z@earthsong.io
@@ -38,6 +42,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20250314T065519Z
 DTEND:20250314T075519Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:total-lunar-eclipse2025-03-14t06-58-42-343z@earthsong.io
@@ -45,6 +50,7 @@ SUMMARY:Total Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20250314T065842Z
 DTEND:20250314T075842Z
+DESCRIPTION:What: The Moon passes fully into Earth's dark inner shadow and often takes on a reddish color.\n\nWhy: Sunlight bent through Earth's atmosphere still reaches the Moon\, with the atmosphere filtering out shorter wavelengths first — the same reason sunsets are red.\n\nA thought: Safe to watch directly with the naked eye for its full duration — no filters are needed for a lunar eclipse.
 END:VEVENT
 BEGIN:VEVENT
 UID:march-equinox2025-03-20t09-01-26-759z@earthsong.io
@@ -52,6 +58,8 @@ SUMMARY:March Equinox
 CATEGORIES:season
 DTSTART:20250320T090126Z
 DTEND:20250320T100126Z
+DESCRIPTION:What: The Sun crosses Earth's equatorial plane heading north\, and day and night come close to equal length worldwide.\n\nWhy: Earth's axis stays tilted about 23.4° as it orbits the Sun\; twice a year that tilt favors neither hemisphere\, so sunlight briefly divides close to evenly.\n\nA thought: A hinge between two seasons — a fair moment to notice what has actually changed\, not just what the calendar says should have.\n\nRead the letter: The First Note — https://earthsong.io/newsletter/001-the-first-note
+URL:https://earthsong.io/newsletter/001-the-first-note
 END:VEVENT
 BEGIN:VEVENT
 UID:partial-solar-eclipse2025-03-29t10-47-25-889z@earthsong.io
@@ -59,6 +67,7 @@ SUMMARY:Partial Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20250329T104725Z
 DTEND:20250329T114725Z
+DESCRIPTION:What: The Moon passes between Earth and Sun but only partly covers the Sun's disk as seen from here.\n\nWhy: The Moon's shadow grazes Earth rather than landing directly — this location is outside the narrow path where full coverage occurs.\n\nA thought: Never view any part of a solar eclipse without certified solar filters — see the site disclaimer for exact eye-safety guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-03-29t10-58-23-943z@earthsong.io
@@ -66,6 +75,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20250329T105823Z
 DTEND:20250329T115823Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2025-04-13t00-22-55-612z@earthsong.io
@@ -73,6 +83,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20250413T002255Z
 DTEND:20250413T012255Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-04-27t19-31-42-524z@earthsong.io
@@ -80,6 +91,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20250427T193142Z
 DTEND:20250427T203142Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2025-05-12t16-56-34-487z@earthsong.io
@@ -87,6 +99,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20250512T165634Z
 DTEND:20250512T175634Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-05-27t03-02-52-165z@earthsong.io
@@ -94,6 +107,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20250527T030252Z
 DTEND:20250527T040252Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2025-06-11t07-44-26-705z@earthsong.io
@@ -101,6 +115,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20250611T074426Z
 DTEND:20250611T084426Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:june-solstice2025-06-21t02-42-17-883z@earthsong.io
@@ -108,6 +123,8 @@ SUMMARY:June Solstice
 CATEGORIES:season
 DTSTART:20250621T024217Z
 DTEND:20250621T034217Z
+DESCRIPTION:What: The Sun reaches its most northerly position in Earth's sky: the longest daylight of the year in the Northern Hemisphere\, the shortest in the Southern.\n\nWhy: Earth's tilted axis keeps pointing the same direction in space through the year\, so each hemisphere alternately leans toward or away from direct sunlight.\n\nA thought: Wherever the days are longest\, it's a natural checkpoint: what has this season's extra light actually gone toward?\n\nRead the letter: Roots and Rivers — https://earthsong.io/newsletter/002-roots-and-rivers
+URL:https://earthsong.io/newsletter/002-roots-and-rivers
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-06-25t10-32-07-505z@earthsong.io
@@ -115,6 +132,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20250625T103207Z
 DTEND:20250625T113207Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2025-07-10t20-37-22-564z@earthsong.io
@@ -122,6 +140,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20250710T203722Z
 DTEND:20250710T213722Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-07-24t19-11-43-368z@earthsong.io
@@ -129,6 +148,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20250724T191143Z
 DTEND:20250724T201143Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2025-08-09t07-55-38-270z@earthsong.io
@@ -136,6 +156,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20250809T075538Z
 DTEND:20250809T085538Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-08-23t06-07-07-551z@earthsong.io
@@ -143,6 +164,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20250823T060707Z
 DTEND:20250823T070707Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2025-09-07t18-09-23-804z@earthsong.io
@@ -150,6 +172,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20250907T180923Z
 DTEND:20250907T190923Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:total-lunar-eclipse2025-09-07t18-11-41-501z@earthsong.io
@@ -157,6 +180,7 @@ SUMMARY:Total Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20250907T181141Z
 DTEND:20250907T191141Z
+DESCRIPTION:What: The Moon passes fully into Earth's dark inner shadow and often takes on a reddish color.\n\nWhy: Sunlight bent through Earth's atmosphere still reaches the Moon\, with the atmosphere filtering out shorter wavelengths first — the same reason sunsets are red.\n\nA thought: Safe to watch directly with the naked eye for its full duration — no filters are needed for a lunar eclipse.
 END:VEVENT
 BEGIN:VEVENT
 UID:partial-solar-eclipse2025-09-21t19-41-48-934z@earthsong.io
@@ -164,6 +188,7 @@ SUMMARY:Partial Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20250921T194148Z
 DTEND:20250921T204148Z
+DESCRIPTION:What: The Moon passes between Earth and Sun but only partly covers the Sun's disk as seen from here.\n\nWhy: The Moon's shadow grazes Earth rather than landing directly — this location is outside the narrow path where full coverage occurs.\n\nA thought: Never view any part of a solar eclipse without certified solar filters — see the site disclaimer for exact eye-safety guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-09-21t19-54-45-095z@earthsong.io
@@ -171,6 +196,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20250921T195445Z
 DTEND:20250921T205445Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:september-equinox2025-09-22t18-19-34-559z@earthsong.io
@@ -178,6 +204,8 @@ SUMMARY:September Equinox
 CATEGORIES:season
 DTSTART:20250922T181934Z
 DTEND:20250922T191934Z
+DESCRIPTION:What: The Sun crosses the equatorial plane heading south\, and day and night again come close to equal length worldwide.\n\nWhy: The same axial tilt as March\, now carrying the opposite hemisphere toward its summer.\n\nA thought: A second yearly hinge — a fair point to compare what has changed since the last one.\n\nRead the letter: What the Year Has Given — https://earthsong.io/newsletter/003-what-the-year-has-given
+URL:https://earthsong.io/newsletter/003-what-the-year-has-given
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2025-10-07t03-48-03-710z@earthsong.io
@@ -185,6 +213,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20251007T034803Z
 DTEND:20251007T044803Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-10-21t12-25-48-807z@earthsong.io
@@ -192,6 +221,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20251021T122548Z
 DTEND:20251021T132548Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2025-11-05t13-19-46-227z@earthsong.io
@@ -199,6 +229,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20251105T131946Z
 DTEND:20251105T141946Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-11-20t06-47-57-148z@earthsong.io
@@ -206,6 +237,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20251120T064757Z
 DTEND:20251120T074757Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2025-12-04t23-14-34-291z@earthsong.io
@@ -213,6 +245,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20251204T231434Z
 DTEND:20251205T001434Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2025-12-20t01-44-03-071z@earthsong.io
@@ -220,6 +253,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20251220T014403Z
 DTEND:20251220T024403Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:december-solstice2025-12-21t15-03-03-907z@earthsong.io
@@ -227,6 +261,8 @@ SUMMARY:December Solstice
 CATEGORIES:season
 DTSTART:20251221T150303Z
 DTEND:20251221T160303Z
+DESCRIPTION:What: The Sun reaches its most southerly position: the shortest daylight of the year in the Northern Hemisphere\, the longest in the Southern.\n\nWhy: The Northern Hemisphere is tilted furthest from the Sun at this point in the orbit.\n\nA thought: The turn back toward more light starts here\, even before it is easy to notice.\n\nRead the letter: The Long Dark — https://earthsong.io/newsletter/004-the-long-dark
+URL:https://earthsong.io/newsletter/004-the-long-dark
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-01-03t10-03-26-043z@earthsong.io
@@ -234,6 +270,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20260103T100326Z
 DTEND:20260103T110326Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-01-18t19-52-39-367z@earthsong.io
@@ -241,6 +278,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20260118T195239Z
 DTEND:20260118T205239Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-02-01t22-09-49-657z@earthsong.io
@@ -248,6 +286,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20260201T220949Z
 DTEND:20260201T230949Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-02-17t12-01-47-328z@earthsong.io
@@ -255,6 +294,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20260217T120147Z
 DTEND:20260217T130147Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:annular-solar-eclipse2026-02-17t12-11-53-939z@earthsong.io
@@ -262,6 +302,7 @@ SUMMARY:Annular Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20260217T121153Z
 DTEND:20260217T131153Z
+DESCRIPTION:What: The Moon crosses directly in front of the Sun but looks too small to fully cover it\, leaving a bright ring visible around the edge.\n\nWhy: The Moon is near the far point of its slightly elliptical orbit\, so it appears smaller than the Sun from Earth.\n\nA thought: There is no unfiltered-safe moment in an annular eclipse — certified solar filters are required throughout. See the site disclaimer for exact guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:total-lunar-eclipse2026-03-03t11-33-40-289z@earthsong.io
@@ -269,6 +310,7 @@ SUMMARY:Total Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20260303T113340Z
 DTEND:20260303T123340Z
+DESCRIPTION:What: The Moon passes fully into Earth's dark inner shadow and often takes on a reddish color.\n\nWhy: Sunlight bent through Earth's atmosphere still reaches the Moon\, with the atmosphere filtering out shorter wavelengths first — the same reason sunsets are red.\n\nA thought: Safe to watch directly with the naked eye for its full duration — no filters are needed for a lunar eclipse.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-03-03t11-38-32-022z@earthsong.io
@@ -276,6 +318,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20260303T113832Z
 DTEND:20260303T123832Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-03-19t01-24-05-931z@earthsong.io
@@ -283,6 +326,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20260319T012405Z
 DTEND:20260319T022405Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:march-equinox2026-03-20t14-45-36-044z@earthsong.io
@@ -290,6 +334,8 @@ SUMMARY:March Equinox
 CATEGORIES:season
 DTSTART:20260320T144536Z
 DTEND:20260320T154536Z
+DESCRIPTION:What: The Sun crosses Earth's equatorial plane heading north\, and day and night come close to equal length worldwide.\n\nWhy: Earth's axis stays tilted about 23.4° as it orbits the Sun\; twice a year that tilt favors neither hemisphere\, so sunlight briefly divides close to evenly.\n\nA thought: A hinge between two seasons — a fair moment to notice what has actually changed\, not just what the calendar says should have.\n\nRead the letter: The Speed of Spring — https://earthsong.io/newsletter/006-the-speed-of-spring
+URL:https://earthsong.io/newsletter/006-the-speed-of-spring
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-04-02t02-12-36-809z@earthsong.io
@@ -297,6 +343,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20260402T021236Z
 DTEND:20260402T031236Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-04-17t11-52-21-628z@earthsong.io
@@ -304,6 +351,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20260417T115221Z
 DTEND:20260417T125221Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-05-01t17-23-47-564z@earthsong.io
@@ -311,6 +359,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20260501T172347Z
 DTEND:20260501T182347Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-05-16t20-01-32-344z@earthsong.io
@@ -318,6 +367,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20260516T200132Z
 DTEND:20260516T210132Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-05-31t08-45-48-291z@earthsong.io
@@ -325,6 +375,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20260531T084548Z
 DTEND:20260531T094548Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-06-15t02-54-39-007z@earthsong.io
@@ -332,6 +383,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20260615T025439Z
 DTEND:20260615T035439Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:june-solstice2026-06-21t08-25-00-316z@earthsong.io
@@ -339,6 +391,8 @@ SUMMARY:June Solstice
 CATEGORIES:season
 DTSTART:20260621T082500Z
 DTEND:20260621T092500Z
+DESCRIPTION:What: The Sun reaches its most northerly position in Earth's sky: the longest daylight of the year in the Northern Hemisphere\, the shortest in the Southern.\n\nWhy: Earth's tilted axis keeps pointing the same direction in space through the year\, so each hemisphere alternately leans toward or away from direct sunlight.\n\nA thought: Wherever the days are longest\, it's a natural checkpoint: what has this season's extra light actually gone toward?\n\nRead the letter: What Light Is For — https://earthsong.io/newsletter/007-what-light-is-for
+URL:https://earthsong.io/newsletter/007-what-light-is-for
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-06-29t23-57-17-744z@earthsong.io
@@ -346,6 +400,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20260629T235717Z
 DTEND:20260630T005717Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-07-14t09-44-04-307z@earthsong.io
@@ -353,6 +408,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20260714T094404Z
 DTEND:20260714T104404Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-07-29t14-36-19-011z@earthsong.io
@@ -360,6 +416,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20260729T143619Z
 DTEND:20260729T153619Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-08-12t17-37-11-343z@earthsong.io
@@ -367,6 +424,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20260812T173711Z
 DTEND:20260812T183711Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:total-solar-eclipse2026-08-12t17-45-46-794z@earthsong.io
@@ -374,6 +432,8 @@ SUMMARY:Total Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20260812T174546Z
 DTEND:20260812T184546Z
+DESCRIPTION:What: The Moon fully covers the Sun's disk for a few minutes\, visible only within a narrow path across Earth's surface.\n\nWhy: The Moon is close enough in its orbit\, and the alignment precise enough\, for its disk to match or exceed the Sun's apparent size.\n\nA thought: Direct viewing is safe only during the brief total phase itself\, and only from inside the path of totality — see the site disclaimer for exact eye-safety guidance.\n\nRead the letter: What the Moon Blots Out — https://earthsong.io/newsletter/008-what-the-moon-blots-out
+URL:https://earthsong.io/newsletter/008-what-the-moon-blots-out
 END:VEVENT
 BEGIN:VEVENT
 UID:partial-lunar-eclipse2026-08-28t04-12-49-076z@earthsong.io
@@ -381,6 +441,7 @@ SUMMARY:Partial Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20260828T041249Z
 DTEND:20260828T051249Z
+DESCRIPTION:What: Part of the Moon passes through Earth's dark inner shadow\, visibly darkening one edge while the rest stays lit.\n\nWhy: The Sun\, Earth\, and Moon are nearly but not exactly aligned — close enough for the shadow to clip the Moon\, not cover it.\n\nA thought: Safe to watch directly with the naked eye — unlike solar eclipses\, lunar eclipses need no eye protection.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-08-28t04-19-06-085z@earthsong.io
@@ -388,6 +449,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20260828T041906Z
 DTEND:20260828T051906Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-09-11t03-27-28-467z@earthsong.io
@@ -395,6 +457,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20260911T032728Z
 DTEND:20260911T042728Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:september-equinox2026-09-23t00-05-38-617z@earthsong.io
@@ -402,6 +465,7 @@ SUMMARY:September Equinox
 CATEGORIES:season
 DTSTART:20260923T000538Z
 DTEND:20260923T010538Z
+DESCRIPTION:What: The Sun crosses the equatorial plane heading south\, and day and night again come close to equal length worldwide.\n\nWhy: The same axial tilt as March\, now carrying the opposite hemisphere toward its summer.\n\nA thought: A second yearly hinge — a fair point to compare what has changed since the last one.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-09-26t16-49-32-233z@earthsong.io
@@ -409,6 +473,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20260926T164932Z
 DTEND:20260926T174932Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-10-10t15-50-36-724z@earthsong.io
@@ -416,6 +481,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20261010T155036Z
 DTEND:20261010T165036Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-10-26t04-12-15-538z@earthsong.io
@@ -423,6 +489,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20261026T041215Z
 DTEND:20261026T051215Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-11-09t07-02-42-392z@earthsong.io
@@ -430,6 +497,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20261109T070242Z
 DTEND:20261109T080242Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-11-24t14-54-04-191z@earthsong.io
@@ -437,6 +505,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20261124T145404Z
 DTEND:20261124T155404Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2026-12-09t00-52-31-284z@earthsong.io
@@ -444,6 +513,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20261209T005231Z
 DTEND:20261209T015231Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:december-solstice2026-12-21t20-50-22-187z@earthsong.io
@@ -451,6 +521,7 @@ SUMMARY:December Solstice
 CATEGORIES:season
 DTSTART:20261221T205022Z
 DTEND:20261221T215022Z
+DESCRIPTION:What: The Sun reaches its most southerly position: the shortest daylight of the year in the Northern Hemisphere\, the longest in the Southern.\n\nWhy: The Northern Hemisphere is tilted furthest from the Sun at this point in the orbit.\n\nA thought: The turn back toward more light starts here\, even before it is easy to notice.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2026-12-24t01-28-45-040z@earthsong.io
@@ -458,6 +529,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20261224T012845Z
 DTEND:20261224T022845Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-01-07t20-25-05-910z@earthsong.io
@@ -465,6 +537,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20270107T202505Z
 DTEND:20270107T212505Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-01-22t12-17-50-281z@earthsong.io
@@ -472,6 +545,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20270122T121750Z
 DTEND:20270122T131750Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-02-06t15-56-47-415z@earthsong.io
@@ -479,6 +553,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20270206T155647Z
 DTEND:20270206T165647Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:annular-solar-eclipse2027-02-06t15-59-32-957z@earthsong.io
@@ -486,6 +561,7 @@ SUMMARY:Annular Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20270206T155932Z
 DTEND:20270206T165932Z
+DESCRIPTION:What: The Moon crosses directly in front of the Sun but looks too small to fully cover it\, leaving a bright ring visible around the edge.\n\nWhy: The Moon is near the far point of its slightly elliptical orbit\, so it appears smaller than the Sun from Earth.\n\nA thought: There is no unfiltered-safe moment in an annular eclipse — certified solar filters are required throughout. See the site disclaimer for exact guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:penumbral-lunar-eclipse2027-02-20t23-12-44-142z@earthsong.io
@@ -493,6 +569,7 @@ SUMMARY:Penumbral Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20270220T231244Z
 DTEND:20270221T001244Z
+DESCRIPTION:What: The Moon passes through Earth's faint outer shadow\, dimming only slightly and often hard to notice without instruments.\n\nWhy: The Moon misses Earth's darker inner shadow entirely\, passing only through the lighter penumbral region.\n\nA thought: Easy to miss entirely — a fair excuse to compare tonight’s Moon carefully against how it looked the night before.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-02-20t23-24-07-298z@earthsong.io
@@ -500,6 +577,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20270220T232407Z
 DTEND:20270221T002407Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-03-08t09-30-07-391z@earthsong.io
@@ -507,6 +585,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20270308T093007Z
 DTEND:20270308T103007Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:march-equinox2027-03-20t20-24-43-453z@earthsong.io
@@ -514,6 +593,7 @@ SUMMARY:March Equinox
 CATEGORIES:season
 DTSTART:20270320T202443Z
 DTEND:20270320T212443Z
+DESCRIPTION:What: The Sun crosses Earth's equatorial plane heading north\, and day and night come close to equal length worldwide.\n\nWhy: Earth's axis stays tilted about 23.4° as it orbits the Sun\; twice a year that tilt favors neither hemisphere\, so sunlight briefly divides close to evenly.\n\nA thought: A hinge between two seasons — a fair moment to notice what has actually changed\, not just what the calendar says should have.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-03-22t10-44-19-393z@earthsong.io
@@ -521,6 +601,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20270322T104419Z
 DTEND:20270322T114419Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-04-06t23-51-45-366z@earthsong.io
@@ -528,6 +609,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20270406T235145Z
 DTEND:20270407T005145Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-04-20t22-27-44-813z@earthsong.io
@@ -535,6 +617,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20270420T222744Z
 DTEND:20270420T232744Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-05-06t10-59-10-533z@earthsong.io
@@ -542,6 +625,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20270506T105910Z
 DTEND:20270506T115910Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-05-20t10-59-39-474z@earthsong.io
@@ -549,6 +633,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20270520T105939Z
 DTEND:20270520T115939Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-06-04t19-40-51-143z@earthsong.io
@@ -556,6 +641,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20270604T194051Z
 DTEND:20270604T204051Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-06-19t00-45-01-303z@earthsong.io
@@ -563,6 +649,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20270619T004501Z
 DTEND:20270619T014501Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:june-solstice2027-06-21t14-10-33-792z@earthsong.io
@@ -570,6 +657,7 @@ SUMMARY:June Solstice
 CATEGORIES:season
 DTSTART:20270621T141033Z
 DTEND:20270621T151033Z
+DESCRIPTION:What: The Sun reaches its most northerly position in Earth's sky: the longest daylight of the year in the Northern Hemisphere\, the shortest in the Southern.\n\nWhy: Earth's tilted axis keeps pointing the same direction in space through the year\, so each hemisphere alternately leans toward or away from direct sunlight.\n\nA thought: Wherever the days are longest\, it's a natural checkpoint: what has this season's extra light actually gone toward?
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-07-04t03-02-32-965z@earthsong.io
@@ -577,6 +665,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20270704T030232Z
 DTEND:20270704T040232Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-07-18t15-45-36-038z@earthsong.io
@@ -584,6 +673,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20270718T154536Z
 DTEND:20270718T164536Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:penumbral-lunar-eclipse2027-07-18t16-02-54-880z@earthsong.io
@@ -591,6 +681,7 @@ SUMMARY:Penumbral Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20270718T160254Z
 DTEND:20270718T170254Z
+DESCRIPTION:What: The Moon passes through Earth's faint outer shadow\, dimming only slightly and often hard to notice without instruments.\n\nWhy: The Moon misses Earth's darker inner shadow entirely\, passing only through the lighter penumbral region.\n\nA thought: Easy to miss entirely — a fair excuse to compare tonight’s Moon carefully against how it looked the night before.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-08-02t10-05-42-274z@earthsong.io
@@ -598,6 +689,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20270802T100542Z
 DTEND:20270802T110542Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:total-solar-eclipse2027-08-02t10-06-34-636z@earthsong.io
@@ -605,6 +697,7 @@ SUMMARY:Total Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20270802T100634Z
 DTEND:20270802T110634Z
+DESCRIPTION:What: The Moon fully covers the Sun's disk for a few minutes\, visible only within a narrow path across Earth's surface.\n\nWhy: The Moon is close enough in its orbit\, and the alignment precise enough\, for its disk to match or exceed the Sun's apparent size.\n\nA thought: Direct viewing is safe only during the brief total phase itself\, and only from inside the path of totality — see the site disclaimer for exact eye-safety guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:penumbral-lunar-eclipse2027-08-17t07-13-44-931z@earthsong.io
@@ -612,6 +705,7 @@ SUMMARY:Penumbral Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20270817T071344Z
 DTEND:20270817T081344Z
+DESCRIPTION:What: The Moon passes through Earth's faint outer shadow\, dimming only slightly and often hard to notice without instruments.\n\nWhy: The Moon misses Earth's darker inner shadow entirely\, passing only through the lighter penumbral region.\n\nA thought: Easy to miss entirely — a fair excuse to compare tonight’s Moon carefully against how it looked the night before.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-08-17t07-29-19-949z@earthsong.io
@@ -619,6 +713,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20270817T072919Z
 DTEND:20270817T082919Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-08-31t17-41-40-859z@earthsong.io
@@ -626,6 +721,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20270831T174140Z
 DTEND:20270831T184140Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-09-15t23-04-09-408z@earthsong.io
@@ -633,6 +729,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20270915T230409Z
 DTEND:20270916T000409Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:september-equinox2027-09-23t06-01-18-345z@earthsong.io
@@ -640,6 +737,7 @@ SUMMARY:September Equinox
 CATEGORIES:season
 DTSTART:20270923T060118Z
 DTEND:20270923T070118Z
+DESCRIPTION:What: The Sun crosses the equatorial plane heading south\, and day and night again come close to equal length worldwide.\n\nWhy: The same axial tilt as March\, now carrying the opposite hemisphere toward its summer.\n\nA thought: A second yearly hinge — a fair point to compare what has changed since the last one.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-09-30t02-36-34-580z@earthsong.io
@@ -647,6 +745,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20270930T023634Z
 DTEND:20270930T033634Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-10-15t13-47-34-041z@earthsong.io
@@ -654,6 +753,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20271015T134734Z
 DTEND:20271015T144734Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-10-29t13-37-04-567z@earthsong.io
@@ -661,6 +761,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20271029T133704Z
 DTEND:20271029T143704Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-11-14t03-26-25-672z@earthsong.io
@@ -668,6 +769,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20271114T032625Z
 DTEND:20271114T042625Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-11-28t03-24-59-323z@earthsong.io
@@ -675,6 +777,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20271128T032459Z
 DTEND:20271128T042459Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2027-12-13t16-09-18-503z@earthsong.io
@@ -682,6 +785,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20271213T160918Z
 DTEND:20271213T170918Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:december-solstice2027-12-22t02-42-18-622z@earthsong.io
@@ -689,6 +793,7 @@ SUMMARY:December Solstice
 CATEGORIES:season
 DTSTART:20271222T024218Z
 DTEND:20271222T034218Z
+DESCRIPTION:What: The Sun reaches its most southerly position: the shortest daylight of the year in the Northern Hemisphere\, the longest in the Southern.\n\nWhy: The Northern Hemisphere is tilted furthest from the Sun at this point in the orbit.\n\nA thought: The turn back toward more light starts here\, even before it is easy to notice.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2027-12-27t20-12-56-268z@earthsong.io
@@ -696,6 +801,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20271227T201256Z
 DTEND:20271227T211256Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-01-12t04-03-35-250z@earthsong.io
@@ -703,6 +809,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20280112T040335Z
 DTEND:20280112T050335Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:partial-lunar-eclipse2028-01-12t04-13-00-859z@earthsong.io
@@ -710,6 +817,7 @@ SUMMARY:Partial Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20280112T041300Z
 DTEND:20280112T051300Z
+DESCRIPTION:What: Part of the Moon passes through Earth's dark inner shadow\, visibly darkening one edge while the rest stays lit.\n\nWhy: The Sun\, Earth\, and Moon are nearly but not exactly aligned — close enough for the shadow to clip the Moon\, not cover it.\n\nA thought: Safe to watch directly with the naked eye — unlike solar eclipses\, lunar eclipses need no eye protection.
 END:VEVENT
 BEGIN:VEVENT
 UID:annular-solar-eclipse2028-01-26t15-07-42-381z@earthsong.io
@@ -717,6 +825,7 @@ SUMMARY:Annular Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20280126T150742Z
 DTEND:20280126T160742Z
+DESCRIPTION:What: The Moon crosses directly in front of the Sun but looks too small to fully cover it\, leaving a bright ring visible around the edge.\n\nWhy: The Moon is near the far point of its slightly elliptical orbit\, so it appears smaller than the Sun from Earth.\n\nA thought: There is no unfiltered-safe moment in an annular eclipse — certified solar filters are required throughout. See the site disclaimer for exact guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-01-26t15-13-09-905z@earthsong.io
@@ -724,6 +833,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20280126T151309Z
 DTEND:20280126T161309Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-02-10t15-04-13-909z@earthsong.io
@@ -731,6 +841,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20280210T150413Z
 DTEND:20280210T160413Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-02-25t10-38-03-838z@earthsong.io
@@ -738,6 +849,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20280225T103803Z
 DTEND:20280225T113803Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-03-11t01-06-30-808z@earthsong.io
@@ -745,6 +857,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20280311T010630Z
 DTEND:20280311T020630Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:march-equinox2028-03-20t02-17-01-018z@earthsong.io
@@ -752,6 +865,7 @@ SUMMARY:March Equinox
 CATEGORIES:season
 DTSTART:20280320T021701Z
 DTEND:20280320T031701Z
+DESCRIPTION:What: The Sun crosses Earth's equatorial plane heading north\, and day and night come close to equal length worldwide.\n\nWhy: Earth's axis stays tilted about 23.4° as it orbits the Sun\; twice a year that tilt favors neither hemisphere\, so sunlight briefly divides close to evenly.\n\nA thought: A hinge between two seasons — a fair moment to notice what has actually changed\, not just what the calendar says should have.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-03-26t04-31-58-183z@earthsong.io
@@ -759,6 +873,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20280326T043158Z
 DTEND:20280326T053158Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-04-09t10-27-05-370z@earthsong.io
@@ -766,6 +881,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20280409T102705Z
 DTEND:20280409T112705Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-04-24t19-47-31-131z@earthsong.io
@@ -773,6 +889,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20280424T194731Z
 DTEND:20280424T204731Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-05-08t19-49-27-382z@earthsong.io
@@ -780,6 +897,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20280508T194927Z
 DTEND:20280508T204927Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-05-24t08-16-51-263z@earthsong.io
@@ -787,6 +905,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20280524T081651Z
 DTEND:20280524T091651Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-06-07t06-09-21-941z@earthsong.io
@@ -794,6 +913,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20280607T060921Z
 DTEND:20280607T070921Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:june-solstice2028-06-20t20-01-42-742z@earthsong.io
@@ -801,6 +921,7 @@ SUMMARY:June Solstice
 CATEGORIES:season
 DTSTART:20280620T200142Z
 DTEND:20280620T210142Z
+DESCRIPTION:What: The Sun reaches its most northerly position in Earth's sky: the longest daylight of the year in the Northern Hemisphere\, the shortest in the Southern.\n\nWhy: Earth's tilted axis keeps pointing the same direction in space through the year\, so each hemisphere alternately leans toward or away from direct sunlight.\n\nA thought: Wherever the days are longest\, it's a natural checkpoint: what has this season's extra light actually gone toward?
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-06-22t18-28-05-407z@earthsong.io
@@ -808,6 +929,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20280622T182805Z
 DTEND:20280622T192805Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-07-06t18-11-24-613z@earthsong.io
@@ -815,6 +937,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20280706T181124Z
 DTEND:20280706T191124Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:partial-lunar-eclipse2028-07-06t18-19-38-379z@earthsong.io
@@ -822,6 +945,7 @@ SUMMARY:Partial Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20280706T181938Z
 DTEND:20280706T191938Z
+DESCRIPTION:What: Part of the Moon passes through Earth's dark inner shadow\, visibly darkening one edge while the rest stays lit.\n\nWhy: The Sun\, Earth\, and Moon are nearly but not exactly aligned — close enough for the shadow to clip the Moon\, not cover it.\n\nA thought: Safe to watch directly with the naked eye — unlike solar eclipses\, lunar eclipses need no eye protection.
 END:VEVENT
 BEGIN:VEVENT
 UID:total-solar-eclipse2028-07-22t02-55-24-627z@earthsong.io
@@ -829,6 +953,7 @@ SUMMARY:Total Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20280722T025524Z
 DTEND:20280722T035524Z
+DESCRIPTION:What: The Moon fully covers the Sun's disk for a few minutes\, visible only within a narrow path across Earth's surface.\n\nWhy: The Moon is close enough in its orbit\, and the alignment precise enough\, for its disk to match or exceed the Sun's apparent size.\n\nA thought: Direct viewing is safe only during the brief total phase itself\, and only from inside the path of totality — see the site disclaimer for exact eye-safety guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-07-22t03-02-12-962z@earthsong.io
@@ -836,6 +961,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20280722T030212Z
 DTEND:20280722T040212Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-08-05t08-10-25-424z@earthsong.io
@@ -843,6 +969,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20280805T081025Z
 DTEND:20280805T091025Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-08-20t10-44-18-950z@earthsong.io
@@ -850,6 +977,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20280820T104418Z
 DTEND:20280820T114418Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-09-03t23-48-12-853z@earthsong.io
@@ -857,6 +985,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20280903T234812Z
 DTEND:20280904T004812Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-09-18t18-24-12-490z@earthsong.io
@@ -864,6 +993,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20280918T182412Z
 DTEND:20280918T192412Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:september-equinox2028-09-22t11-45-24-683z@earthsong.io
@@ -871,6 +1001,7 @@ SUMMARY:September Equinox
 CATEGORIES:season
 DTSTART:20280922T114524Z
 DTEND:20280922T124524Z
+DESCRIPTION:What: The Sun crosses the equatorial plane heading south\, and day and night again come close to equal length worldwide.\n\nWhy: The same axial tilt as March\, now carrying the opposite hemisphere toward its summer.\n\nA thought: A second yearly hinge — a fair point to compare what has changed since the last one.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-10-03t16-25-38-555z@earthsong.io
@@ -878,6 +1009,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20281003T162538Z
 DTEND:20281003T172538Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-10-18t02-57-16-332z@earthsong.io
@@ -885,6 +1017,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20281018T025716Z
 DTEND:20281018T035716Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-11-02t09-17-57-674z@earthsong.io
@@ -892,6 +1025,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20281102T091757Z
 DTEND:20281102T101757Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-11-16t13-18-29-111z@earthsong.io
@@ -899,6 +1033,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20281116T131829Z
 DTEND:20281116T141829Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-12-02t01-40-45-472z@earthsong.io
@@ -906,6 +1041,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20281202T014045Z
 DTEND:20281202T024045Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2028-12-16t02-06-48-928z@earthsong.io
@@ -913,6 +1049,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20281216T020648Z
 DTEND:20281216T030648Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:december-solstice2028-12-21t08-20-05-734z@earthsong.io
@@ -920,6 +1057,7 @@ SUMMARY:December Solstice
 CATEGORIES:season
 DTSTART:20281221T082005Z
 DTEND:20281221T092005Z
+DESCRIPTION:What: The Sun reaches its most southerly position: the shortest daylight of the year in the Northern Hemisphere\, the longest in the Southern.\n\nWhy: The Northern Hemisphere is tilted furthest from the Sun at this point in the orbit.\n\nA thought: The turn back toward more light starts here\, even before it is easy to notice.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2028-12-31t16-48-59-675z@earthsong.io
@@ -927,6 +1065,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20281231T164859Z
 DTEND:20281231T174859Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:total-lunar-eclipse2028-12-31t16-51-54-549z@earthsong.io
@@ -934,6 +1073,7 @@ SUMMARY:Total Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20281231T165154Z
 DTEND:20281231T175154Z
+DESCRIPTION:What: The Moon passes fully into Earth's dark inner shadow and often takes on a reddish color.\n\nWhy: Sunlight bent through Earth's atmosphere still reaches the Moon\, with the atmosphere filtering out shorter wavelengths first — the same reason sunsets are red.\n\nA thought: Safe to watch directly with the naked eye for its full duration — no filters are needed for a lunar eclipse.
 END:VEVENT
 BEGIN:VEVENT
 UID:partial-solar-eclipse2029-01-14t17-12-28-816z@earthsong.io
@@ -941,6 +1081,7 @@ SUMMARY:Partial Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20290114T171228Z
 DTEND:20290114T181228Z
+DESCRIPTION:What: The Moon passes between Earth and Sun but only partly covers the Sun's disk as seen from here.\n\nWhy: The Moon's shadow grazes Earth rather than landing directly — this location is outside the narrow path where full coverage occurs.\n\nA thought: Never view any part of a solar eclipse without certified solar filters — see the site disclaimer for exact eye-safety guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-01-14t17-25-04-419z@earthsong.io
@@ -948,6 +1089,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20290114T172504Z
 DTEND:20290114T182504Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-01-30t06-04-04-988z@earthsong.io
@@ -955,6 +1097,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20290130T060404Z
 DTEND:20290130T070404Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-02-13t10-32-07-641z@earthsong.io
@@ -962,6 +1105,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20290213T103207Z
 DTEND:20290213T113207Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-02-28t17-10-41-546z@earthsong.io
@@ -969,6 +1113,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20290228T171041Z
 DTEND:20290228T181041Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-03-15t04-19-53-395z@earthsong.io
@@ -976,6 +1121,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20290315T041953Z
 DTEND:20290315T051953Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:march-equinox2029-03-20t08-01-40-100z@earthsong.io
@@ -983,6 +1129,7 @@ SUMMARY:March Equinox
 CATEGORIES:season
 DTSTART:20290320T080140Z
 DTEND:20290320T090140Z
+DESCRIPTION:What: The Sun crosses Earth's equatorial plane heading north\, and day and night come close to equal length worldwide.\n\nWhy: Earth's axis stays tilted about 23.4° as it orbits the Sun\; twice a year that tilt favors neither hemisphere\, so sunlight briefly divides close to evenly.\n\nA thought: A hinge between two seasons — a fair moment to notice what has actually changed\, not just what the calendar says should have.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-03-30t02-26-51-604z@earthsong.io
@@ -990,6 +1137,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20290330T022651Z
 DTEND:20290330T032651Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-04-13t21-40-49-335z@earthsong.io
@@ -997,6 +1145,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20290413T214049Z
 DTEND:20290413T224049Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-04-28t10-37-18-225z@earthsong.io
@@ -1004,6 +1153,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20290428T103718Z
 DTEND:20290428T113718Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-05-13t13-42-45-386z@earthsong.io
@@ -1011,6 +1161,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20290513T134245Z
 DTEND:20290513T144245Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-05-27t18-38-01-011z@earthsong.io
@@ -1018,6 +1169,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20290527T183801Z
 DTEND:20290527T193801Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-06-12t03-51-06-526z@earthsong.io
@@ -1025,6 +1177,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20290612T035106Z
 DTEND:20290612T045106Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:partial-solar-eclipse2029-06-12t04-04-55-151z@earthsong.io
@@ -1032,6 +1185,7 @@ SUMMARY:Partial Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20290612T040455Z
 DTEND:20290612T050455Z
+DESCRIPTION:What: The Moon passes between Earth and Sun but only partly covers the Sun's disk as seen from here.\n\nWhy: The Moon's shadow grazes Earth rather than landing directly — this location is outside the narrow path where full coverage occurs.\n\nA thought: Never view any part of a solar eclipse without certified solar filters — see the site disclaimer for exact eye-safety guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:june-solstice2029-06-21t01-48-17-389z@earthsong.io
@@ -1039,6 +1193,7 @@ SUMMARY:June Solstice
 CATEGORIES:season
 DTSTART:20290621T014817Z
 DTEND:20290621T024817Z
+DESCRIPTION:What: The Sun reaches its most northerly position in Earth's sky: the longest daylight of the year in the Northern Hemisphere\, the shortest in the Southern.\n\nWhy: Earth's tilted axis keeps pointing the same direction in space through the year\, so each hemisphere alternately leans toward or away from direct sunlight.\n\nA thought: Wherever the days are longest\, it's a natural checkpoint: what has this season's extra light actually gone toward?
 END:VEVENT
 BEGIN:VEVENT
 UID:total-lunar-eclipse2029-06-26t03-22-06-538z@earthsong.io
@@ -1046,6 +1201,7 @@ SUMMARY:Total Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20290626T032206Z
 DTEND:20290626T042206Z
+DESCRIPTION:What: The Moon passes fully into Earth's dark inner shadow and often takes on a reddish color.\n\nWhy: Sunlight bent through Earth's atmosphere still reaches the Moon\, with the atmosphere filtering out shorter wavelengths first — the same reason sunsets are red.\n\nA thought: Safe to watch directly with the naked eye for its full duration — no filters are needed for a lunar eclipse.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-06-26t03-22-52-166z@earthsong.io
@@ -1053,6 +1209,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20290626T032252Z
 DTEND:20290626T042252Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:partial-solar-eclipse2029-07-11t15-36-03-870z@earthsong.io
@@ -1060,6 +1217,7 @@ SUMMARY:Partial Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20290711T153603Z
 DTEND:20290711T163603Z
+DESCRIPTION:What: The Moon passes between Earth and Sun but only partly covers the Sun's disk as seen from here.\n\nWhy: The Moon's shadow grazes Earth rather than landing directly — this location is outside the narrow path where full coverage occurs.\n\nA thought: Never view any part of a solar eclipse without certified solar filters — see the site disclaimer for exact eye-safety guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-07-11t15-51-38-023z@earthsong.io
@@ -1067,6 +1225,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20290711T155138Z
 DTEND:20290711T165138Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-07-25t13-36-20-875z@earthsong.io
@@ -1074,6 +1233,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20290725T133620Z
 DTEND:20290725T143620Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-08-10t01-56-20-601z@earthsong.io
@@ -1081,6 +1241,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20290810T015620Z
 DTEND:20290810T025620Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-08-24t01-51-52-268z@earthsong.io
@@ -1088,6 +1249,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20290824T015152Z
 DTEND:20290824T025152Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-09-08t10-44-53-514z@earthsong.io
@@ -1095,6 +1257,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20290908T104453Z
 DTEND:20290908T114453Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-09-22t16-29-59-007z@earthsong.io
@@ -1102,6 +1265,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20290922T162959Z
 DTEND:20290922T172959Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:september-equinox2029-09-22t17-37-49-811z@earthsong.io
@@ -1109,6 +1273,7 @@ SUMMARY:September Equinox
 CATEGORIES:season
 DTSTART:20290922T173749Z
 DTEND:20290922T183749Z
+DESCRIPTION:What: The Sun crosses the equatorial plane heading south\, and day and night again come close to equal length worldwide.\n\nWhy: The same axial tilt as March\, now carrying the opposite hemisphere toward its summer.\n\nA thought: A second yearly hinge — a fair point to compare what has changed since the last one.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-10-07t19-15-03-475z@earthsong.io
@@ -1116,6 +1281,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20291007T191503Z
 DTEND:20291007T201503Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-10-22t09-28-16-872z@earthsong.io
@@ -1123,6 +1289,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20291022T092816Z
 DTEND:20291022T102816Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-11-06t04-24-36-398z@earthsong.io
@@ -1130,6 +1297,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20291106T042436Z
 DTEND:20291106T052436Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-11-21t04-03-39-129z@earthsong.io
@@ -1137,6 +1305,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20291121T040339Z
 DTEND:20291121T050339Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2029-12-05t14-52-35-435z@earthsong.io
@@ -1144,6 +1313,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20291205T145235Z
 DTEND:20291205T155235Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:partial-solar-eclipse2029-12-05t15-02-39-906z@earthsong.io
@@ -1151,6 +1321,7 @@ SUMMARY:Partial Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20291205T150239Z
 DTEND:20291205T160239Z
+DESCRIPTION:What: The Moon passes between Earth and Sun but only partly covers the Sun's disk as seen from here.\n\nWhy: The Moon's shadow grazes Earth rather than landing directly — this location is outside the narrow path where full coverage occurs.\n\nA thought: Never view any part of a solar eclipse without certified solar filters — see the site disclaimer for exact eye-safety guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:total-lunar-eclipse2029-12-20t22-41-54-610z@earthsong.io
@@ -1158,6 +1329,7 @@ SUMMARY:Total Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20291220T224154Z
 DTEND:20291220T234154Z
+DESCRIPTION:What: The Moon passes fully into Earth's dark inner shadow and often takes on a reddish color.\n\nWhy: Sunlight bent through Earth's atmosphere still reaches the Moon\, with the atmosphere filtering out shorter wavelengths first — the same reason sunsets are red.\n\nA thought: Safe to watch directly with the naked eye for its full duration — no filters are needed for a lunar eclipse.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2029-12-20t22-47-07-108z@earthsong.io
@@ -1165,6 +1337,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20291220T224707Z
 DTEND:20291220T234707Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:december-solstice2029-12-21t14-14-10-210z@earthsong.io
@@ -1172,6 +1345,7 @@ SUMMARY:December Solstice
 CATEGORIES:season
 DTSTART:20291221T141410Z
 DTEND:20291221T151410Z
+DESCRIPTION:What: The Sun reaches its most southerly position: the shortest daylight of the year in the Northern Hemisphere\, the longest in the Southern.\n\nWhy: The Northern Hemisphere is tilted furthest from the Sun at this point in the orbit.\n\nA thought: The turn back toward more light starts here\, even before it is easy to notice.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-01-04t02-50-03-334z@earthsong.io
@@ -1179,6 +1353,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20300104T025003Z
 DTEND:20300104T035003Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-01-19t15-54-55-641z@earthsong.io
@@ -1186,6 +1361,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20300119T155455Z
 DTEND:20300119T165455Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-02-02t16-08-04-913z@earthsong.io
@@ -1193,6 +1369,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20300202T160804Z
 DTEND:20300202T170804Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-02-18t06-20-21-113z@earthsong.io
@@ -1200,6 +1377,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20300218T062021Z
 DTEND:20300218T072021Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-03-04t06-35-17-321z@earthsong.io
@@ -1207,6 +1385,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20300304T063517Z
 DTEND:20300304T073517Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-03-19t17-57-01-027z@earthsong.io
@@ -1214,6 +1393,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20300319T175701Z
 DTEND:20300319T185701Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:march-equinox2030-03-20t13-51-42-425z@earthsong.io
@@ -1221,6 +1401,7 @@ SUMMARY:March Equinox
 CATEGORIES:season
 DTSTART:20300320T135142Z
 DTEND:20300320T145142Z
+DESCRIPTION:What: The Sun crosses Earth's equatorial plane heading north\, and day and night come close to equal length worldwide.\n\nWhy: Earth's axis stays tilted about 23.4° as it orbits the Sun\; twice a year that tilt favors neither hemisphere\, so sunlight briefly divides close to evenly.\n\nA thought: A hinge between two seasons — a fair moment to notice what has actually changed\, not just what the calendar says should have.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-04-02t22-03-11-573z@earthsong.io
@@ -1228,6 +1409,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20300402T220311Z
 DTEND:20300402T230311Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-04-18t03-20-30-180z@earthsong.io
@@ -1235,6 +1417,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20300418T032030Z
 DTEND:20300418T042030Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-05-02t14-12-51-587z@earthsong.io
@@ -1242,6 +1425,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20300502T141251Z
 DTEND:20300502T151251Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-05-17t11-19-35-510z@earthsong.io
@@ -1249,6 +1433,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20300517T111935Z
 DTEND:20300517T121935Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-06-01t06-22-00-842z@earthsong.io
@@ -1256,6 +1441,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20300601T062200Z
 DTEND:20300601T072200Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:annular-solar-eclipse2030-06-01t06-27-58-051z@earthsong.io
@@ -1263,6 +1449,7 @@ SUMMARY:Annular Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20300601T062758Z
 DTEND:20300601T072758Z
+DESCRIPTION:What: The Moon crosses directly in front of the Sun but looks too small to fully cover it\, leaving a bright ring visible around the edge.\n\nWhy: The Moon is near the far point of its slightly elliptical orbit\, so it appears smaller than the Sun from Earth.\n\nA thought: There is no unfiltered-safe moment in an annular eclipse — certified solar filters are required throughout. See the site disclaimer for exact guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:partial-lunar-eclipse2030-06-15t18-33-14-732z@earthsong.io
@@ -1270,6 +1457,7 @@ SUMMARY:Partial Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20300615T183314Z
 DTEND:20300615T193314Z
+DESCRIPTION:What: Part of the Moon passes through Earth's dark inner shadow\, visibly darkening one edge while the rest stays lit.\n\nWhy: The Sun\, Earth\, and Moon are nearly but not exactly aligned — close enough for the shadow to clip the Moon\, not cover it.\n\nA thought: Safe to watch directly with the naked eye — unlike solar eclipses\, lunar eclipses need no eye protection.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-06-15t18-41-27-269z@earthsong.io
@@ -1277,6 +1465,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20300615T184127Z
 DTEND:20300615T194127Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:june-solstice2030-06-21t07-31-13-263z@earthsong.io
@@ -1284,6 +1473,7 @@ SUMMARY:June Solstice
 CATEGORIES:season
 DTSTART:20300621T073113Z
 DTEND:20300621T083113Z
+DESCRIPTION:What: The Sun reaches its most northerly position in Earth's sky: the longest daylight of the year in the Northern Hemisphere\, the shortest in the Southern.\n\nWhy: Earth's tilted axis keeps pointing the same direction in space through the year\, so each hemisphere alternately leans toward or away from direct sunlight.\n\nA thought: Wherever the days are longest\, it's a natural checkpoint: what has this season's extra light actually gone toward?
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-06-30t21-35-03-841z@earthsong.io
@@ -1291,6 +1481,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20300630T213503Z
 DTEND:20300630T223503Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-07-15t02-12-26-716z@earthsong.io
@@ -1298,6 +1489,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20300715T021226Z
 DTEND:20300715T031226Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-07-30t11-11-33-215z@earthsong.io
@@ -1305,6 +1497,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20300730T111133Z
 DTEND:20300730T121133Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-08-13t10-44-54-214z@earthsong.io
@@ -1312,6 +1505,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20300813T104454Z
 DTEND:20300813T114454Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-08-28t23-07-52-736z@earthsong.io
@@ -1319,6 +1513,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20300828T230752Z
 DTEND:20300829T000752Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-09-11t21-18-28-879z@earthsong.io
@@ -1326,6 +1521,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20300911T211828Z
 DTEND:20300911T221828Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:september-equinox2030-09-22t23-27-13-152z@earthsong.io
@@ -1333,6 +1529,7 @@ SUMMARY:September Equinox
 CATEGORIES:season
 DTSTART:20300922T232713Z
 DTEND:20300923T002713Z
+DESCRIPTION:What: The Sun crosses the equatorial plane heading south\, and day and night again come close to equal length worldwide.\n\nWhy: The same axial tilt as March\, now carrying the opposite hemisphere toward its summer.\n\nA thought: A second yearly hinge — a fair point to compare what has changed since the last one.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-09-27t09-55-09-045z@earthsong.io
@@ -1340,6 +1537,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20300927T095509Z
 DTEND:20300927T105509Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-10-11t10-47-25-227z@earthsong.io
@@ -1347,6 +1545,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20301011T104725Z
 DTEND:20301011T114725Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-10-26t20-17-26-387z@earthsong.io
@@ -1354,6 +1553,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20301026T201726Z
 DTEND:20301026T211726Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-11-10t03-30-56-196z@earthsong.io
@@ -1361,6 +1561,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20301110T033056Z
 DTEND:20301110T043056Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-11-25t06-46-57-337z@earthsong.io
@@ -1368,6 +1569,7 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20301125T064657Z
 DTEND:20301125T074657Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 BEGIN:VEVENT
 UID:total-solar-eclipse2030-11-25t06-50-19-626z@earthsong.io
@@ -1375,6 +1577,7 @@ SUMMARY:Total Solar Eclipse
 CATEGORIES:eclipse
 DTSTART:20301125T065019Z
 DTEND:20301125T075019Z
+DESCRIPTION:What: The Moon fully covers the Sun's disk for a few minutes\, visible only within a narrow path across Earth's surface.\n\nWhy: The Moon is close enough in its orbit\, and the alignment precise enough\, for its disk to match or exceed the Sun's apparent size.\n\nA thought: Direct viewing is safe only during the brief total phase itself\, and only from inside the path of totality — see the site disclaimer for exact eye-safety guidance.
 END:VEVENT
 BEGIN:VEVENT
 UID:penumbral-lunar-eclipse2030-12-09t22-27-32-805z@earthsong.io
@@ -1382,6 +1585,7 @@ SUMMARY:Penumbral Lunar Eclipse
 CATEGORIES:eclipse
 DTSTART:20301209T222732Z
 DTEND:20301209T232732Z
+DESCRIPTION:What: The Moon passes through Earth's faint outer shadow\, dimming only slightly and often hard to notice without instruments.\n\nWhy: The Moon misses Earth's darker inner shadow entirely\, passing only through the lighter penumbral region.\n\nA thought: Easy to miss entirely — a fair excuse to compare tonight’s Moon carefully against how it looked the night before.
 END:VEVENT
 BEGIN:VEVENT
 UID:full-moon2030-12-09t22-41-06-011z@earthsong.io
@@ -1389,6 +1593,7 @@ SUMMARY:Full Moon
 CATEGORIES:full-moon
 DTSTART:20301209T224106Z
 DTEND:20301209T234106Z
+DESCRIPTION:What: Earth sits roughly between the Sun and Moon\, so the Moon's near side is fully lit.\n\nWhy: The same sunlight-and-geometry mechanism as every other phase — a full moon is the far end of the same cycle as a new moon\, not a separate event.\n\nA thought: A reliably bright night\, worth noticing for how differently a familiar place looks under it.
 END:VEVENT
 BEGIN:VEVENT
 UID:december-solstice2030-12-21t20-09-35-689z@earthsong.io
@@ -1396,6 +1601,7 @@ SUMMARY:December Solstice
 CATEGORIES:season
 DTSTART:20301221T200935Z
 DTEND:20301221T210935Z
+DESCRIPTION:What: The Sun reaches its most southerly position: the shortest daylight of the year in the Northern Hemisphere\, the longest in the Southern.\n\nWhy: The Northern Hemisphere is tilted furthest from the Sun at this point in the orbit.\n\nA thought: The turn back toward more light starts here\, even before it is easy to notice.
 END:VEVENT
 BEGIN:VEVENT
 UID:new-moon2030-12-24t17-32-41-689z@earthsong.io
@@ -1403,5 +1609,6 @@ SUMMARY:New Moon
 CATEGORIES:new-moon
 DTSTART:20301224T173241Z
 DTEND:20301224T183241Z
+DESCRIPTION:What: The Moon sits near the Sun's direction in the sky with its lit half facing mostly away from Earth\, so it is effectively invisible.\n\nWhy: The Moon makes no light of its own — only the half facing the Sun is illuminated\, and the current geometry hides that half from view.\n\nA thought: The darkest phase of the cycle\, and sometimes the easiest night to actually see the stars.
 END:VEVENT
 END:VCALENDAR
